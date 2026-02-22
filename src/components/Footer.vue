@@ -39,13 +39,13 @@ onMounted(() => {
     <div class="footerWrapper">
       <div class="footerSocials">
         <h4>Socials</h4>
-        <a href="https://www.youtube.com/@tribeholz23" target="_blank"
+        <a href="https://www.youtube.com/@arro_av" target="_blank"
           >YouTube</a
         >
         <a href="https://www.instagram.com/_tribeholz/" target="_blank"
           >Instagram</a
         >
-        <a href="https://github.com/sync-tax" target="_blank">GitHub</a>
+        <a href="https://github.com/arro-av" target="_blank">GitHub</a>
       </div>
       <div class="footerContact">
         <h4>Contact</h4>

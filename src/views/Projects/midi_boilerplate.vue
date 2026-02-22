@@ -24,7 +24,8 @@ onMounted(() => {
       />
 
       <div class="mainProjectContent">
-        <pre><code class="language-ruby">
+        <pre>
+          <code class="language-ruby">
 "_- MIDI-JAM ~ [boilerplate] by TRIBΞHOLZ -_'
 _-_-__--_-_--__-_--__-___--_-_--_--_-_-_-__-."
 #---------------------------------------------------------
@@ -156,7 +157,7 @@ end
   </div>
 </template>
 
-<style scoped>
+<style>
 .ease-in-enter-active,
 .ease-in-leave-active {
   transition: opacity 0.2s ease-in;

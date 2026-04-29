@@ -9,8 +9,10 @@ const projects = ref([
   {
     categories: ["DEVELOPMENT"],
     title: "Progress",
+    text: "A gamified pomodoro system featuring quests, analyitics and a progression system.",
     currentProjectView: "/progress",
-    imagePath: "/bg_images/dev_4.jpg",
+    imagePath: "/card_thumbails/Progress.jpg",
+    link: ["https://github.com/arro-av/progress_app"],
     tag: ["#Application", "#Electron"],
   },
   {
@@ -127,12 +129,12 @@ function updateActiveFilter(filter) {
         <ProjectCard
           v-for="project in filteredProjects"
           :key="project.title"
-          :subTitle="project.subTitle"
           :projectTitle="project.title"
+          :projectInfo="project.text"
           :currentProjectView="project.currentProjectView"
           :imagePath="project.imagePath"
           :projectTags="project.tag"
-          :projectInfo="project.info"
+          :projectLinks="project.link"
         />
       </TransitionGroup>
     </div>

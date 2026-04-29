@@ -122,7 +122,7 @@ body {
 @media (max-width: 506px) {
   .projectNav li {
     width: 100px;
-    font-size: 12px;
+    font-size: 1px;
   }
 }
 .projectNav li:hover {
@@ -136,30 +136,65 @@ body {
   border: 1px solid var(--border-color);
 }
 
-.projectListContainer .project-list {
-  width: 100%;
+.projectListContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.projectListContainer .project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  gap: 40px;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 .projectListContainer .projectContainer {
   filter: var(--logo-filter);
   display: flex;
-  border-radius: 20px;
+  flex-direction: column;
   border: 2px solid var(--project-border);
-  margin-top: 80px;
-  width: 80%;
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 75%;
+  width: 380px;
+  height: 380px;
+  opacity: 50%;
 }
 .projectListContainer .projectContainer:hover {
-  transform: scale(1.02);
+  transform: scale(1.015);
   opacity: 100%;
+}
+.projectListContainer .projectContainer .projectImage {
+  width: 360px;
+  height: 210px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.projectListContainer .projectContainer .projectImage .externalLink {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+.projectListContainer .projectContainer .projectImage .externalLink a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.2s ease;
+}
+.projectListContainer .projectContainer .projectImage .externalLink a:hover {
+  background-color: rgb(255, 255, 255);
+}
+.projectListContainer .projectContainer .projectImage .externalLink a img {
+  width: 16px;
+  height: 16px;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer {
@@ -168,61 +203,24 @@ body {
     margin-top: 80px;
   }
 }
-.projectListContainer .projectContainer .projectLeftSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.projectListContainer .projectContainer .projectLeftSection h2 {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 800;
-  font-size: 3rem;
-  font-variation-settings: "wdth" 125;
-  font-size: 4rem;
-  text-align: center;
-  color: white;
-  margin-top: 35px;
-}
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectLeftSection h2 {
-    font-size: 2.2rem;
+@media (max-width: 1200px) {
+  .projectListContainer .projectContainer {
+    width: 320px;
+    height: 320px;
   }
 }
-.projectListContainer .projectContainer .projectLeftSection .projectTags {
-  display: flex;
-  justify-content: center;
-}
-.projectListContainer .projectContainer .projectLeftSection .projectTags p {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: var(--text-thick);
-  font-size: 1.2rem;
-  font-size: 1.3rem;
-  opacity: 75%;
-  padding: 5px 10px;
-  border-radius: 15px;
-  position: relative;
-  top: -30px;
-  color: white;
-  font-weight: 500;
-}
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectLeftSection .projectTags p {
-    font-size: 1rem;
-    top: -20px;
+@media (max-width: 1024px) {
+  .projectListContainer .projectContainer {
+    width: 280px;
+    height: 280px;
   }
 }
-.projectListContainer .projectContainer .projectLeftSection .projectRoute {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 778px) {
-  .projectListContainer .projectContainer .projectLeftSection .projectRoute {
-    display: none;
+@media (max-width: 900px) {
+  .projectListContainer .projectContainer {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    min-height: 320px;
   }
 }
 

@@ -113,7 +113,7 @@ function updateActiveFilter(filter) {
   <div class="projectsWrapper">
     <div class="projectNav">
       <li
-        v-for="filter in ['ALL PROJECTS', 'DEVELOPMENT', 'DESIGN', 'AUDIO VISUAL']"
+        v-for="filter in ['ALL PROJECTS','AUDIO VISUAL', 'DEVELOPMENT', 'DESIGN']"
         :key="filter"
         :id="activeFilter === filter ? 'activeFilter' : ''"
         @click="updateActiveFilter(filter)"

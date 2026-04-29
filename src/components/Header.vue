@@ -10,12 +10,9 @@ import StarBG from "./StarBG.vue";
       alt="Header graphic. Tribeholz literal logo."
     /> -->
     <div class="herowrapper">
-      <h2 class="hero glitch layers" data-text="程式和設計">
-        <span>ARRO.AV</span>
+      <h2 class="hero glitch layers" data-text="ARRO">
+        <span>ARRO</span>
       </h2>
-      <h5 class="hero glitch layers" data-text="程式和設計">
-        <span>code_design_art</span>
-      </h5>
       <!--<h6 class="hero glitch layers" data-text="程式和設計">
         <span>開發設計</span>
       </h6>-->

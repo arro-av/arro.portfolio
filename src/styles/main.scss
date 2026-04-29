@@ -1,8 +1,9 @@
 :root {
   --background-color: white;
+  --card-background-color: #f0f0f0;
   --text-color: black;
   --text-thick: 500;
-  --border-color: #0f0f0f;
+  --border-color: #0E0E0E;
   --project-border: white;
   --svg-filter: invert(0%);
   --logo-filter: invert(100%);
@@ -12,9 +13,10 @@
 
 .lightmode {
   --background-color: white;
+  --card-background-color: #f0f0f0;
   --text-color: black;
   --text-thick: 500;
-  --border-color: #0f0f0f;
+  --border-color: #0E0E0E;
   --project-border: white;
   --svg-filter: invert(0%);
   --logo-filter: invert(100%);
@@ -23,7 +25,8 @@
 }
 
 .darkmode {
-  --background-color: #0f0f0f;
+  --background-color: #0E0E0E;
+  --card-background-color: #131313;
   --text-color: white;
   --text-thick: 300;
   --border-color: #383838;

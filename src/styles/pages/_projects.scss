@@ -1,11 +1,8 @@
 .projectNav {
-  border-top: 0.5px solid #383838;
+  border-top: 2px solid #383838;
 
   display: flex;
   justify-content: space-around;
-
-  position: sticky;
-  top: 48px;
 
   bottom: 0px;
   z-index: 9;
@@ -19,16 +16,21 @@
     text-align: center;
     color: var(--text-color);
 
-    flex: 1;
-    padding: 1px 0;
+    transform: translateY(-20px);
+
+    width: 250px;
+    height: 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #383838;
+    border: 2px solid #383838;
+    background-color: var(--card-background-color);
 
-    font-size: 1.1rem;
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: 400;
 
     @media (max-width: 470px) {
       font-size: .9rem;

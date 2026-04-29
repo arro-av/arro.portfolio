@@ -1,8 +1,9 @@
 :root {
   --background-color: white;
+  --card-background-color: #f0f0f0;
   --text-color: black;
   --text-thick: 500;
-  --border-color: #0f0f0f;
+  --border-color: #0E0E0E;
   --project-border: white;
   --svg-filter: invert(0%);
   --logo-filter: invert(100%);
@@ -12,9 +13,10 @@
 
 .lightmode {
   --background-color: white;
+  --card-background-color: #f0f0f0;
   --text-color: black;
   --text-thick: 500;
-  --border-color: #0f0f0f;
+  --border-color: #0E0E0E;
   --project-border: white;
   --svg-filter: invert(0%);
   --logo-filter: invert(100%);
@@ -23,7 +25,8 @@
 }
 
 .darkmode {
-  --background-color: #0f0f0f;
+  --background-color: #0E0E0E;
+  --card-background-color: #131313;
   --text-color: white;
   --text-thick: 300;
   --border-color: #383838;
@@ -59,7 +62,7 @@
 }
 
 body {
-  max-width: 1000px;
+  max-width: 1280px;
   margin: 0 auto;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -74,11 +77,9 @@ body {
 }
 
 .projectNav {
-  border-top: 0.5px solid #383838;
+  border-top: 2px solid #383838;
   display: flex;
   justify-content: space-around;
-  position: sticky;
-  top: 48px;
   bottom: 0px;
   z-index: 9;
   background-color: var(--background-color);
@@ -88,13 +89,17 @@ body {
   list-style: none;
   text-align: center;
   color: var(--text-color);
-  flex: 1;
-  padding: 1px 0;
+  transform: translateY(-20px);
+  width: 250px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #383838;
-  font-size: 1.1rem;
+  border: 2px solid #383838;
+  background-color: var(--card-background-color);
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 400;
 }
 @media (max-width: 470px) {
   .projectNav li {
@@ -386,7 +391,7 @@ body {
   opacity: 100%;
   text-align: center;
   font-family: "arro_font", sans-serif;
-  font-size: 6rem;
+  font-size: 128px;
 }
 @media (max-width: 600px) {
   .headerContainer .herowrapper img,

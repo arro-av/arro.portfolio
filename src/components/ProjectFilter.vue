@@ -8,12 +8,12 @@ const projects = ref([
   //DEVELOPMENT
   {
     categories: ["DEVELOPMENT"],
-    title: "Progress",
+    title: "PROGRESS",
     text: "A gamified pomodoro system featuring quests, analyitics and a progression system.",
     currentProjectView: "/progress",
     imagePath: "/card_thumbails/Progress.jpg",
     link: ["https://github.com/arro-av/progress_app"],
-    tag: ["#Application", "#Electron"],
+    tag: ["#APPLICATION", "#ELECTRON", "#VUE.JS"],
   },
   {
     categories: ["DEVELOPMENT"],

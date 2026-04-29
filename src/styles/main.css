@@ -17,7 +17,7 @@
   --text-color: black;
   --text-thick: 500;
   --border-color: #0E0E0E;
-  --project-border: white;
+  --project-border: #747474;
   --svg-filter: invert(0%);
   --logo-filter: invert(100%);
   --dark-opa: 30%;
@@ -30,7 +30,7 @@
   --text-color: white;
   --text-thick: 300;
   --border-color: #383838;
-  --project-border: rgba(255, 255, 255, 0.35);
+  --project-border: #383838;
   --svg-filter: invert(100%);
   --logo-filter: invert(0%);
   --dark-opa: 100%;
@@ -142,6 +142,9 @@ body {
   width: 100%;
   margin-top: 60px;
 }
+.projectListContainer .projectCardLink {
+  cursor: pointer;
+}
 .projectListContainer .project-list {
   display: grid;
   grid-template-columns: repeat(3, 380px);
@@ -150,51 +153,79 @@ body {
   transition: opacity 0.2s ease;
 }
 .projectListContainer .projectContainer {
-  filter: var(--logo-filter);
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--project-border);
+  border: 1px solid var(--project-border);
+  filter: grayscale(100%);
   width: 380px;
   height: 380px;
-  opacity: 50%;
+  opacity: 90%;
+  padding: 8px;
+  background-color: var(--card-background-color);
 }
 .projectListContainer .projectContainer:hover {
-  transform: scale(1.015);
+  transform: scale(1.02);
   opacity: 100%;
+  filter: grayscale(0%);
+}
+.projectListContainer .projectContainer h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-color);
+  padding: 5px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.projectListContainer .projectContainer p {
+  font-size: 14px;
+  opacity: 50%;
+  color: var(--text-color);
+  padding: 5px;
+  margin-top: -5px;
+  margin-left: 8px;
 }
 .projectListContainer .projectContainer .projectImage {
   width: 360px;
   height: 210px;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 10px;
   background-size: cover;
   background-position: center;
 }
 .projectListContainer .projectContainer .projectImage .externalLink {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   display: flex;
   gap: 10px;
   z-index: 1000;
-}
-.projectListContainer .projectContainer .projectImage .externalLink a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: background-color 0.2s ease;
+  background-color: var(--card-background-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
 }
-.projectListContainer .projectContainer .projectImage .externalLink a:hover {
-  background-color: rgb(255, 255, 255);
+.projectListContainer .projectContainer .projectImage .externalLink .externalLinkIcon {
+  width: 24px;
+  height: 24px;
+  filter: var(--svg-filter);
+  transition: opacity 0.15s ease;
 }
-.projectListContainer .projectContainer .projectImage .externalLink a img {
-  width: 16px;
-  height: 16px;
+.projectListContainer .projectContainer .projectTags {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+.projectListContainer .projectContainer .projectTags p {
+  font-family: "space mono", monospace;
+  font-size: 12px;
+  color: var(--text-color);
+  opacity: 50%;
+  border: 1px solid var(--text-color);
+  padding: 5px 10px 5px 10px;
+}
+.projectListContainer .projectContainer .projectTags p:first-child {
+  opacity: 100%;
 }
 @media (max-width: 778px) {
   .projectListContainer .projectContainer {
@@ -609,8 +640,8 @@ body {
 }
 
 #lastNavLink {
-  border-right: 2px solid var(--border-color);
   padding-right: 20px;
+  margin-right: 15px;
 }
 @media (max-width: 506px) {
   #lastNavLink {
@@ -623,7 +654,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
   padding-top: 0;
   padding-bottom: 0;
   border-bottom: 2px solid var(--border-color);
@@ -633,8 +664,8 @@ nav {
   z-index: 10;
 }
 nav #logoImage {
-  width: 27px;
-  height: 27px;
+  width: 35px;
+  height: 35px;
   margin-left: 15px;
   margin-top: 5px;
   z-index: 1000;
@@ -696,8 +727,8 @@ nav ul .navItemsContainer {
 }
 nav ul li {
   list-style: none;
-  margin-right: 20px;
-  font-size: 20px;
+  margin-right: 30px;
+  font-size: 22px;
 }
 @media (max-width: 506px) {
   nav ul li {
@@ -726,10 +757,10 @@ nav ul .navLink:hover {
 }
 nav ul .modeSwitch {
   cursor: pointer;
-  margin-right: 20px;
-  margin-top: 5px;
-  width: 25px;
-  height: 25px;
+  margin-right: 30px;
+  margin-top: 7px;
+  width: 26px;
+  height: 26px;
 }
 @media (max-width: 506px) {
   nav ul .modeSwitch {
@@ -784,9 +815,6 @@ nav ul .light:hover {
 }
 .project .backOverview .backLink:hover {
   opacity: 1;
-}
-.project .backOverview img {
-  filter: var(--svg-filter);
 }
 .project .backOverview p {
   color: var(--text-color);

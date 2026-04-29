@@ -112,6 +112,7 @@ onMounted(() => {
       <RouterLink to="/LinkTree" class="navLink" @click="toggleMenu">
         <li id="lastNavLink">LIΠKS</li>
       </RouterLink>
+      <li id="lastNavLink" style="opacity: 30%; margin-top: 2px;">|</li>
 
       <div class="modeSwitchContainer">
         <img

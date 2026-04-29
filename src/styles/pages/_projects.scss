@@ -73,6 +73,11 @@
   justify-content: center;
   width: 100%;
   margin-top: 60px;
+
+  .projectCardLink {
+    cursor: pointer;
+  }
+
   .project-list {
     display: grid;
     grid-template-columns: repeat(3, 380px);
@@ -83,57 +88,89 @@
   }
 
   .projectContainer {
-    filter: var(--logo-filter);
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--project-border);
+    border: 1px solid var(--project-border);
+    filter: grayscale(100%);
 
     width: 380px;
     height: 380px;
 
-    opacity: 50%;
+    opacity: 90%;
+    padding: 8px;
+    background-color: var(--card-background-color);
 
     &:hover {
-      transform: scale(1.015);
+      transform: scale(1.02);
       opacity: 100%;
+      filter: grayscale(0%);
+    }
+
+    h2{
+      font-family: "Space Mono", monospace;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-color);
+      padding: 5px;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+
+    p{
+      font-size: 14px;
+      opacity: 50%;
+      color: var(--text-color);
+      padding: 5px;
+      margin-top: -5px;
+       margin-left: 8px;
     }
 
     .projectImage {
       width: 360px;
       height: 210px;
-      display: flex;
-      margin: 0 auto;
-      margin-top: 10px;
       background-size: cover;
       background-position: center;
 
       .externalLink {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 15px;
+        right: 15px;
         display: flex;
         gap: 10px;
         z-index: 1000;
 
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background-color: rgba(255, 255, 255, 0.8);
-          transition: background-color 0.2s ease;
+        width: 30px;
+        height: 30px;
+        background-color: var(--card-background-color);
+        display: flex;
+        justify-content: center;
+        padding-top: 3px;
 
-          &:hover {
-            background-color: rgba(255, 255, 255, 1);
-          }
-
-          img {
-            width: 16px;
-            height: 16px;
-          }
+        .externalLinkIcon{
+          width: 24px;
+          height: 24px;
+          filter: var(--svg-filter);
+          transition: opacity 0.15s ease;
         }
+      }
+    }
+
+    .projectTags{
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+
+      p{
+        font-family: "space mono", monospace;
+        font-size: 12px;
+        color: var(--text-color);
+        opacity: 50%;
+        border: 1px solid var(--text-color);
+         padding: 5px 10px 5px 10px;
+      }
+
+      p:first-child {
+        opacity: 100%;
       }
     }
 

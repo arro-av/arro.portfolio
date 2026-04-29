@@ -1,7 +1,10 @@
 <script setup>
+import { useRouter } from "vue-router";
 import githubIcon from "../assets/images/GitHub.svg";
 import youtubeIcon from "../assets/images/YouTube.svg";
 import webIcon from "../assets/images/Web.svg";
+
+const router = useRouter();
 
 defineProps({
   imagePath: String,
@@ -37,15 +40,30 @@ function getLinkIcon(linkUrl) {
 
   return webIcon;
 }
+
+function openProject(currentProjectView) {
+  if (!currentProjectView) {
+    return;
+  }
+
+  router.push(currentProjectView);
+}
 </script>
 
 <template>
   <TransitionGroup name="project" tag="div" class="project-list">
-      <RouterLink :to="currentProjectView" class="project-list">
-          <div
+      <div
+      class="projectCardLink"
+      role="link"
+      tabindex="0"
+      @click="openProject(currentProjectView)"
+      @keydown.enter="openProject(currentProjectView)"
+      @keydown.space.prevent="openProject(currentProjectView)"
+    >
+      <div
       class="projectContainer"
     >
-        <div class="projectImage" :style="{ backgroundImage: `url(${imagePath})` }"> 
+        <div class="projectImage" :style="{ backgroundImage: `url(${imagePath})` }">
           <div class="externalLink">
             <a
               v-for="link in projectLinks"
@@ -53,6 +71,7 @@ function getLinkIcon(linkUrl) {
               :href="getLinkUrl(link)"
               target="_blank"
               rel="noopener noreferrer"
+              @click.stop
             >
               <img
                 class="externalLinkIcon"
@@ -74,7 +93,7 @@ function getLinkIcon(linkUrl) {
             <p v-for="tag in projectTags" :key="tag">{{ tag }}</p>
           </div>
         </div>
-      </RouterLink>
+      </div>
   </TransitionGroup>
 </template>
 

@@ -3,7 +3,7 @@
 <template>
   <div class="linkContainer">
     <a href="https://www.youtube.com/@arro_av" target="_blank">YouTube</a>
-    <a href="https://www.instagram.com/_tribeholz" target="_blank">Instagram</a>
+    <a href="https://www.instagram.com/arro_av/" target="_blank">Instagram</a>
     <a href="https://github.com/arro-av" target="_blank">Github</a>
     <a href="https://soundcloud.com/tribeholz-av" target="_blank">Soundcloud</a>
     <a
@@ -11,8 +11,8 @@
       target="_blank"
       >TD Files</a
     >
-    <a href="https://www.instagram.com/durch.durch.durch/" target="_blank"
+    <!--<a href="https://www.instagram.com/durch.durch.durch/" target="_blank"
       >DURCH</a
-    >
+    >-->
   </div>
 </template>

@@ -2,7 +2,7 @@
 import { ref, computed } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
-const activeFilter = ref(localStorage.getItem("activeFilter") || "DEVELOPMENT");
+const activeFilter = ref(localStorage.getItem("activeFilter") || "ALL PROJECTS");
 
 const projects = ref([
   //DEVELOPMENT
@@ -35,30 +35,30 @@ const projects = ref([
     tag: ["#Touchdesigner", "#Tool"],
   },
 
-  //DESIGN WORK
+  //DESIGN
   {
-    categories: ["DESIGN WORK"],
+    categories: ["DESIGN"],
     title: "Portfolio PDF",
     currentProjectView: "/pdf_portfolio",
     imagePath: "/bg_images/des_4.jpg",
     tag: ["#Different", "#Stuff"],
   },
   {
-    categories: ["DESIGN WORK"],
+    categories: ["DESIGN"],
     title: "808club.at",
     currentProjectView: "/808club.at",
     imagePath: "/bg_images/des_1.jpg",
     tag: ["#Webdesign", "#Wordpress"],
   },
   {
-    categories: ["DESIGN WORK"],
+    categories: ["DESIGN"],
     title: "Screenprints",
     currentProjectView: "/screenprints",
     imagePath: "/bg_images/des_2.jpg",
     tag: ["#Screenprint", "#Art"],
   },
   {
-    categories: ["DESIGN WORK"],
+    categories: ["DESIGN"],
     title: "Poster & Flyer",
     currentProjectView: "/event_posters",
     imagePath: "/bg_images/des_3.jpg",
@@ -91,7 +91,9 @@ const projects = ref([
 ]);
 
 const filteredProjects = computed(() => {
-  if (!activeFilter.value) return projects.value;
+  if (!activeFilter.value || activeFilter.value === "ALL PROJECTS") {
+    return projects.value;
+  }
   return projects.value.filter((project) =>
     project.categories.includes(activeFilter.value)
   );
@@ -111,7 +113,7 @@ function updateActiveFilter(filter) {
   <div class="projectsWrapper">
     <div class="projectNav">
       <li
-        v-for="filter in ['DEVELOPMENT', 'DESIGN WORK', 'AUDIO VISUAL']"
+        v-for="filter in ['ALL PROJECTS', 'DEVELOPMENT', 'DESIGN', 'AUDIO VISUAL']"
         :key="filter"
         :id="activeFilter === filter ? 'activeFilter' : ''"
         @click="updateActiveFilter(filter)"

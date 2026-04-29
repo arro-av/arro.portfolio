@@ -18,7 +18,7 @@ nav {
     padding-top: 0;
     padding-bottom: 0;
 
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
 
     background: var(--background-color);
 
@@ -37,12 +37,6 @@ nav {
         filter: var(--logo-filter);
     }
 
-    h2 {
-        @include titles-font();
-        font-size: 1.5rem;
-        padding-left: 20px;
-        padding-top: 10px;
-    }
 
     #menu {
         display: none;
@@ -104,6 +98,7 @@ nav {
         li {
             list-style: none;
             margin-right: 20px;
+            font-size: 20px;
 
             @media(max-width: 506px) {
               font-size: 2rem;

@@ -101,14 +101,28 @@ body {
   font-size: 24px;
   font-weight: 400;
 }
-@media (max-width: 470px) {
+@media (max-width: 1000px) {
   .projectNav li {
-    font-size: 0.9rem;
+    width: 200px;
+    font-size: 22px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 800px) {
   .projectNav li {
-    font-size: 0.8rem;
+    width: 150px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .projectNav li {
+    width: 120px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 506px) {
+  .projectNav li {
+    width: 100px;
+    font-size: 12px;
   }
 }
 .projectNav li:hover {
@@ -350,7 +364,8 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 500px;
+  height: 620px;
+  border-bottom: 1px solid var(--border-color);
   filter: var(--logo-filter);
 }
 @media (max-width: 900px) {
@@ -360,7 +375,7 @@ body {
 }
 @media (max-width: 600px) {
   .headerContainer {
-    height: 200px;
+    height: 250px;
   }
 }
 .headerContainer canvas {
@@ -397,12 +412,6 @@ body {
   .headerContainer .herowrapper img,
   .headerContainer .herowrapper h2 {
     font-size: 3.4rem;
-  }
-}
-@media (max-width: 360px) {
-  .headerContainer .herowrapper img,
-  .headerContainer .herowrapper h2 {
-    font-size: 2rem;
   }
 }
 .headerContainer .herowrapper h5 {
@@ -619,7 +628,7 @@ nav {
   height: 50px;
   padding-top: 0;
   padding-bottom: 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   background: var(--background-color);
   position: sticky;
   top: 0;
@@ -633,15 +642,6 @@ nav #logoImage {
   z-index: 1000;
   opacity: 100%;
   filter: var(--logo-filter);
-}
-nav h2 {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 800;
-  font-size: 3rem;
-  font-variation-settings: "wdth" 125;
-  font-size: 1.5rem;
-  padding-left: 20px;
-  padding-top: 10px;
 }
 nav #menu {
   display: none;
@@ -699,6 +699,7 @@ nav ul .navItemsContainer {
 nav ul li {
   list-style: none;
   margin-right: 20px;
+  font-size: 20px;
 }
 @media (max-width: 506px) {
   nav ul li {

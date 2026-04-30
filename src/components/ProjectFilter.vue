@@ -19,7 +19,7 @@ const projects = ref([
   {
     categories: ["AUDIO VISUAL"],
     title: "TD TUTORIALS",
-    text: "A collection of TouchDesigner Tutorials I did for my YouTube Channel.",
+    text: "A collection of TouchDesigner Tutorials done for my YouTube Channel.",
     currentProjectView: "/TD_tutorials",
     imagePath: "/card_thumbails/TD_Tuts.jpg",
     link: ["https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"],
@@ -39,13 +39,13 @@ const projects = ref([
   {
     categories: ["AUDIO VISUAL", "DEVELOPMENT"],
     title: "STRANGE ATTRACTORS",
-    text: "Various Strange Attractor simulations I did using the GLSL language.",
+    text: "Various Strange Attractor simulations done using the GLSL language.",
     currentProjectView: "/strange_attractors",
     imagePath: "/card_thumbails/Strange_Attractors.jpg",
     link: ["https://github.com/arro-av/TD_Strange_Attractors_GLSL", "https://www.youtube.com/watch?v=Ty3u7qfPj2E" ],
     tag: ["GLSL", "TOUCHDESIGNER", "SIMULATION"],
   },
-
+//___5___
   {
     categories: ["AUDIO VISUAL"],
     title: "Coding Techno",
@@ -54,7 +54,54 @@ const projects = ref([
     imagePath: "/card_thumbails/Coding_Techno.jpg",
     link: ["https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"],
     tag: ["SONIC PI", "TECHNO", "LIVE CODING"],
-  }
+  },
+  //___6___
+  {
+    categories: ["AUDIO VISUAL"],
+    title: "SPOTLIGHT",
+    text: "Visuals done for a concert in the Ars ELectronica Deep Space 8K.",
+    currentProjectView: "/eioeispotlight",
+    imagePath: "/card_thumbails/808_Spotlight.jpg",
+    link: ["https://www.youtube.com/watch?v=R6qUNRbgmk4", "https://808club.x-net.dev/808-spotlight/"],
+    tag: ["EVENT", "ARS ELECTRONICA", "DEEPSPACE8K"],
+  },
+  //___7___
+  {
+    categories: ["DEVELOPMENT", "DESIGN"],
+    title: "808CLUB.AT",
+    text: "Website created for the linz based arts & culture club I am part of.",
+    currentProjectView: "/eioeiclub",
+    imagePath: "/card_thumbails/www.808club.at.jpg",
+    link: ["https://808club.at/"],
+    tag: ["WORDPRESS", "ELEMENTOR"],
+  },
+  //___8___
+  {
+    categories: ["DESIGN"],
+    title: "SCREENPRINTS",
+    text: "Designs done using various approaches for printing in my little at home screenprint workshop.",
+    currentProjectView: "/screenprints",
+    imagePath: "/card_thumbails/Screenprints.jpg",
+    tag: ["AFFINITY", "PROCREATE", "TOUCHDESIGNER"],
+  },
+  //___9___
+    {
+    categories: ["DESIGN"],
+    title: "FLYER DESIGNS",
+    text: "Designs made to promote various local art and music events.",
+    currentProjectView: "/event_posters",
+    imagePath: "/card_thumbails/Fyler_Designs.jpg",
+    tag: ["MARKETING", "AFFINITY"],
+  },
+  //___10___
+  {
+    categories: ["DEVELOPMENT", "DESIGN"],
+    title: "SIDEPROJECTS HAGENBERG",
+    text: "An archive containing a whole bunch of different mini projects I do during uni.",
+    currentProjectView: "/hagenberg",
+    imagePath: "/card_thumbails/Hagenberg.jpg",
+    tag: ["SCHOOL PROJECTS", "ASSIGNMENTS"],
+  },
 ]);
 
 const filteredProjects = computed(() => {

@@ -34,8 +34,8 @@
     #logoImage {
       margin-left: 15px;
 
-      width: 35px;
-      height: 35px;
+      width: 28px;
+      height: 28px;
 
       opacity: 100%;
 
@@ -70,7 +70,7 @@
 
       p {
         @include text-font();
-        font-size: 1rem;
+        font-size: 14px;
         @media (max-width: 590px) {
           display: flex;
           justify-content: center;
@@ -140,14 +140,14 @@
 
       h4 {
         @include subtitles-font();
-        font-size: 1.2rem;
+        font-size: 18px;
       }
 
       a {
         text-decoration: none;
         color: var(--text-color);
-        opacity: 50%;
-        font-size: 1.1rem;
+        opacity: 60%;
+        font-size: 16px;
 
         @media (max-width: 590px) {
           text-align: center;

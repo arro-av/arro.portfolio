@@ -9,7 +9,7 @@ const projects = ref([
   {
     categories: ["DEVELOPMENT"],
     title: "PROGRESS",
-    text: "A gamified pomodoro system featuring quests, analyitics and a progression system.",
+    text: "A gamified pomodoro app with analytics and a progression system.",
     currentProjectView: "/progress",
     imagePath: "/card_thumbails/Progress.jpg",
     link: ["https://github.com/arro-av/progress_app"],
@@ -29,7 +29,7 @@ const projects = ref([
     {
     categories: ["DEVELOPMENT"],
     title: "ARRO PORTFOLIO",
-    text: "My personal portfolio website, which is constant work in progress. Showcasing my explorations ^^",
+    text: "My personal portfolio website, which is constant work in progress.",
     currentProjectView: "/arro",
     imagePath: "/card_thumbails/Portfolio.jpg",
     link: ["https://github.com/arro-av/arro.portfolio"],
@@ -51,11 +51,11 @@ const projects = ref([
   {
     categories: ["AUDIO VISUAL"],
     title: "Coding Techno",
-    text: "A project series focused on coding techno music using the live coding environment SonicPi.",
+    text: "A project series on coding techno music using the live coding tool SonicPi.",
     currentProjectView: "/coding_techno",
     imagePath: "/card_thumbails/Coding_Techno.jpg",
     link: ["https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"],
-    tag: ["SONIC PI", "TECHNO", "LIVE CODING"],
+    tag: ["SONIC PI", "TECHNO", "LIVECODING"],
   },
   //___6___
   {
@@ -65,7 +65,7 @@ const projects = ref([
     currentProjectView: "/eioeispotlight",
     imagePath: "/card_thumbails/808_Spotlight.jpg",
     link: ["https://www.youtube.com/watch?v=R6qUNRbgmk4", "https://808club.x-net.dev/808-spotlight/"],
-    tag: ["EVENT", "ARS ELECTRONICA", "DEEPSPACE8K"],
+    tag: ["EVENT", "AEC", "DEEPSPACE"],
   },
   //___7___
   {
@@ -81,10 +81,10 @@ const projects = ref([
   {
     categories: ["DESIGN"],
     title: "SCREENPRINTS",
-    text: "Designs done using various approaches for printing in my little at home screenprint workshop.",
+    text: "Shirt Designs for my little at home screenprinting workshop.",
     currentProjectView: "/screenprints",
     imagePath: "/card_thumbails/Screenprints.jpg",
-    tag: ["AFFINITY", "PROCREATE", "TOUCHDESIGNER"],
+    tag: ["AFFINITY", "IPAD", "TOUCHDESIGNER"],
   },
   //___9___
     {

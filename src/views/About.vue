@@ -12,7 +12,7 @@ import Image from "../components/Image.vue";
         <h5>hi, my name is...</h5>
         <h2>ROBERT ARDELEANU</h2>
         <p>
-          I am a creative coding enthusiast and like experimenting with all sorts of technology. Actually I really love the process of creating stuff as a whole. ツ<br /> <br>
+          I am a creative coding enthusiast & love tinkering with all sorts of technology. Actually I really enjoy the process of creating stuff as a whole. ツ<br /> <br>
         </p>
         <div class="iconInfoContainer">
           <img src="../assets/images/education.svg" alt="Education icon - a graduation cap used to indicate educational background.">
@@ -28,7 +28,7 @@ import Image from "../components/Image.vue";
     <section class="aboutDetails">
 
       
-      <Collapsible title="Background" isVisible="True">
+      <Collapsible title="BACKGROUND" isVisible="True">
         <p>
           While born in Râmnicu Vâlcea, I grew up in Linz from the age of six. One of the first German movies I remember watching was The Land Before Time. I was so invested in those little dinosaurs that I couldn’t accept it ending. That’s when my first crayon comic was born.
           <br> <br>
@@ -40,7 +40,7 @@ import Image from "../components/Image.vue";
         </p>
         
       </Collapsible>
-      <Collapsible title="Things I love">
+      <Collapsible title="THINGS I LOVE">
         <h4>Coding Stuff</h4>
         <p>visuals, audio, apps, websites & more</p>
 
@@ -54,12 +54,15 @@ import Image from "../components/Image.vue";
         <p>four on the floor is my jam ~.~</p>
       </Collapsible>
 
-      <Collapsible title="Technologies">
+      <Collapsible title="TECHNOLOGIES">
         <h4>Programming</h4>
         <p>JS/TS, Python, Java, GLSL</p>
 
         <h4>Frameworks</h4>
         <p>Vue.js, Electron, SASS</p>
+
+        <h4>AI Tools</h4>
+        <p>Copilot, Codex, ComfyUI, Stitch</p>
 
         <h4>Realtime</h4>
         <p>TouchDesigner, Unity</p>

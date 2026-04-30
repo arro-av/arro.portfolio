@@ -65,7 +65,7 @@
 }
 
 body {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -93,15 +93,15 @@ body {
   text-align: center;
   color: var(--text-color);
   transform: translateY(-20px);
-  width: 250px;
-  height: 40px;
+  width: 200px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #383838;
   background-color: var(--card-background-color);
   font-family: "Space Mono", monospace;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
 }
 @media (max-width: 1000px) {
@@ -142,16 +142,18 @@ body {
 .projectListContainer {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 60px;
+  width: 1024px;
+  margin-top: 30px;
 }
 .projectListContainer .projectCardLink {
   cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .projectListContainer .project-list {
   display: grid;
-  grid-template-columns: repeat(3, 380px);
-  gap: 40px;
+  grid-template-columns: repeat(3, 300px);
+  gap: 30px;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -160,8 +162,8 @@ body {
   flex-direction: column;
   border: 1px solid var(--project-border);
   filter: grayscale(100%);
-  width: 380px;
-  height: 380px;
+  width: 300px;
+  height: 300px;
   opacity: 90%;
   padding: 8px;
   background-color: var(--card-background-color);
@@ -173,31 +175,31 @@ body {
 }
 .projectListContainer .projectContainer h2 {
   font-family: "Space Mono", monospace;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   color: var(--text-color);
-  padding: 5px;
+  padding-left: 5px;
   margin-top: 8px;
+  margin-bottom: 2px;
   margin-left: 8px;
 }
 .projectListContainer .projectContainer p {
   font-size: 14px;
-  opacity: 50%;
+  opacity: 60%;
   color: var(--text-color);
-  padding: 5px;
-  margin-top: -5px;
+  padding-left: 5px;
   margin-left: 8px;
 }
 .projectListContainer .projectContainer .projectImage {
-  width: 360px;
-  height: 210px;
+  width: 288px;
+  height: 168px;
   background-size: cover;
   background-position: center;
 }
 .projectListContainer .projectContainer .projectImage .externalLink {
   position: absolute;
   top: 15px;
-  right: 17px;
+  right: 10px;
   display: flex;
   gap: 5px;
   z-index: 1000;
@@ -209,8 +211,8 @@ body {
   justify-content: center;
 }
 .projectListContainer .projectContainer .projectImage .externalLink .externalLinkIcon {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   filter: var(--svg-filter);
   transition: opacity 0.15s ease;
   background-color: var(--icon-background-color);
@@ -218,14 +220,16 @@ body {
 }
 .projectListContainer .projectContainer .projectTags {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   margin-top: 18px;
 }
 .projectListContainer .projectContainer .projectTags p {
   font-family: "space mono", monospace;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-color);
   opacity: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
   border: 1px solid var(--text-color);
   padding: 5px 10px 5px 10px;
 }
@@ -268,7 +272,7 @@ body {
   justify-content: space-between;
   width: 75%;
   margin: 0 auto;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 @media (max-width: 800px) {
   .aboutSite .aboutGeneral {
@@ -311,15 +315,19 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transform: translateY(-12px);
 }
 .aboutSite .aboutGeneral .aboutTextWrapper .iconInfoContainer img {
-  width: 25px;
-  height: 25px;
-  margin-right: 15px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  opacity: 60%;
   filter: var(--svg-filter);
 }
 .aboutSite .aboutGeneral .aboutTextWrapper .iconInfoContainer p {
   transform: translateY(-5px);
+  font-size: 14px;
+  opacity: 60%;
 }
 .aboutSite .aboutGeneral .aboutTextWrapper h2 {
   font-family: "Anek Devanagari", sans-serif;
@@ -344,8 +352,8 @@ body {
   font-optical-sizing: auto;
   font-weight: var(--text-thick);
   font-size: 1.2rem;
-  font-size: 1.1rem;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-top: 6px;
 }
 .aboutSite .aboutGeneral .aboutTextWrapper a {
   font-family: "Anek Devanagari", sans-serif;
@@ -404,10 +412,10 @@ body {
   padding-top: 2px;
 }
 .linkContainer .linkWrapper p {
-  font-family: "space mono", monospace;
-  font-size: 12px;
+  font-family: "Anek Devanagari", sans-serif;
+  font-size: 14px;
   color: var(--text-color);
-  opacity: 50%;
+  opacity: 60%;
   transform: translateY(-5px);
 }
 .linkContainer .linkWrapper img {
@@ -675,7 +683,7 @@ body {
 
 #lastNavLink {
   padding-right: 20px;
-  margin-right: 15px;
+  margin-right: 0px;
 }
 @media (max-width: 506px) {
   #lastNavLink {
@@ -688,7 +696,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 50px;
   padding-top: 0;
   padding-bottom: 0;
   border-bottom: 2px solid var(--border-color);
@@ -753,7 +761,7 @@ nav ul .navItemsContainer {
 nav ul li {
   list-style: none;
   margin-right: 30px;
-  font-size: 22px;
+  font-size: 18px;
 }
 @media (max-width: 506px) {
   nav ul li {
@@ -782,10 +790,10 @@ nav ul .navLink:hover {
 }
 nav ul .modeSwitch {
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-top: 7px;
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
 }
 @media (max-width: 506px) {
   nav ul .modeSwitch {
@@ -813,8 +821,8 @@ nav ul .light:hover {
 }
 
 #logoImage {
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   margin-left: 15px;
   margin-top: 5px;
   z-index: 1000;
@@ -839,6 +847,7 @@ nav ul .light:hover {
 .project .backOverview {
   padding: 5px;
   position: fixed;
+  background-color: var(--card---card-background-color);
 }
 .project .backOverview .backLink {
   display: flex;
@@ -1014,8 +1023,8 @@ nav ul .light:hover {
 }
 .footer .footerWrapper #logoImage {
   margin-left: 15px;
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   opacity: 100%;
 }
 @media (max-width: 645px) {
@@ -1047,7 +1056,7 @@ nav ul .light:hover {
   font-optical-sizing: auto;
   font-weight: var(--text-thick);
   font-size: 1.2rem;
-  font-size: 1rem;
+  font-size: 14px;
 }
 @media (max-width: 590px) {
   .footer .footerWrapper .footerExtra p {
@@ -1110,14 +1119,14 @@ nav ul .light:hover {
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 .footer .footerWrapper .footerSocials a,
 .footer .footerWrapper .footerContact a {
   text-decoration: none;
   color: var(--text-color);
-  opacity: 50%;
-  font-size: 1.1rem;
+  opacity: 60%;
+  font-size: 16px;
 }
 @media (max-width: 590px) {
   .footer .footerWrapper .footerSocials a,
@@ -1172,8 +1181,10 @@ nav ul .light:hover {
   font-optical-sizing: auto;
   font-weight: var(--text-thick);
   font-size: 1.2rem;
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 16px;
   padding-bottom: 20px;
+  opacity: 80%;
 }
 .aboutDetails .collapsibleWrapper h4,
 .projectDetails .collapsibleWrapper h4 {
@@ -1181,7 +1192,8 @@ nav ul .light:hover {
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 18px;
 }
 .aboutDetails .collapsibleWrapper .collapspreview,
 .projectDetails .collapsibleWrapper .collapspreview {
@@ -1210,7 +1222,7 @@ nav ul .light:hover {
   font-weight: 600;
   font-size: 1.5rem;
   font-variation-settings: "wdth" 100;
-  font-size: 1.4rem;
+  font-size: 22px;
 }
 .aboutDetails .collapsibleWrapper .collapsibleContent img,
 .projectDetails .collapsibleWrapper .collapsibleContent img {

@@ -6,8 +6,6 @@ import LinkTree from "./views/LinkTree.vue";
 //DEVELOPMENT PROJECTS
 import progress from "./views/Projects/progress.vue";
 import arro from "./views/Projects/arro.vue";
-import SonicPi_Tools from "./views/Projects/midi_boilerplate.vue";
-import VJ_Setup from "./views/Projects/TD_VJ_Setup.vue";
 
 //DESIGN PROJECTS
 import eioeiclub from "./views/Projects/808club.vue";
@@ -40,19 +38,9 @@ const routes = [
   //Project Routes
   //DEVELOPMENT
   {
-    path: "/arro.at",
+    path: "/arro",
     name: "arro",
     component: arro,
-  },
-  {
-    path: "/MIDI_Boilerplate",
-    name: "SonicPi_Tools",
-    component: SonicPi_Tools,
-  },
-  {
-    path: "/TD_VJ_Setup",
-    name: "VJ_Setup",
-    component: VJ_Setup,
   },
   {
     path: "/progress",
@@ -92,20 +80,6 @@ const routes = [
     name: "eioeispotlight",
     component: eioeispotlight,
   },
-];
-
-const projectRoutes = [
-  "/AudioProject1",
-  "/AudioProject2",
-  "/AudioProject3",
-  "/VisualProject1",
-  "/VisualProject2",
-  "/DesignProject1",
-  "/DesignProject2",
-  "/DesignProject3",
-  "/OtherProject1",
-  "/OtherProject2",
-  "/OtherProject3",
 ];
 
 const router = createRouter({

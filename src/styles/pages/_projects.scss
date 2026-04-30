@@ -18,8 +18,8 @@
 
     transform: translateY(-20px);
 
-    width: 250px;
-    height: 40px;
+    width: 200px;
+    height: 32px;
 
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@
     background-color: var(--card-background-color);
 
     font-family: "Space Mono", monospace;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
 
     
@@ -71,17 +71,18 @@
 .projectListContainer {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 60px;
+  width: 1024px;
+  margin-top: 30px;
 
   .projectCardLink {
     cursor: pointer;
+    width: fit-content;
   }
 
   .project-list {
     display: grid;
-    grid-template-columns: repeat(3, 380px);
-    gap: 40px;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
     text-decoration: none;
 
     transition: opacity 0.2s ease;
@@ -93,8 +94,8 @@
     border: 1px solid var(--project-border);
     filter: grayscale(100%);
 
-    width: 380px;
-    height: 380px;
+    width: 300px;
+    height: 300px;
 
     opacity: 90%;
     padding: 8px;
@@ -108,33 +109,33 @@
 
     h2{
       font-family: "Space Mono", monospace;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 800;
       color: var(--text-color);
-      padding: 5px;
+      padding-left: 5px;
       margin-top: 8px;
+      margin-bottom: 2px;
       margin-left: 8px;
     }
 
     p{
       font-size: 14px;
-      opacity: 50%;
+      opacity: 60%;
       color: var(--text-color);
-      padding: 5px;
-      margin-top: -5px;
-       margin-left: 8px;
+      padding-left: 5px;
+      margin-left: 8px;
     }
 
     .projectImage {
-      width: 360px;
-      height: 210px;
+      width: 288px;
+      height: 168px;
       background-size: cover;
       background-position: center;
 
       .externalLink {
         position: absolute;
         top: 15px;
-        right: 17px;
+        right: 10px;
         display: flex;
         gap: 5px;
         z-index: 1000;
@@ -145,8 +146,8 @@
         justify-content: center;
 
         .externalLinkIcon{
-          width: 26px;
-          height: 26px;
+          width: 28px;
+          height: 28px;
           filter: var(--svg-filter);
           transition: opacity 0.15s ease;
           background-color: var(--icon-background-color);
@@ -157,14 +158,15 @@
 
     .projectTags{
       display: flex;
-      gap: 10px;
+      gap: 5px;
       margin-top: 18px;
 
       p{
         font-family: "space mono", monospace;
-        font-size: 12px;
+        font-size: 11px;
         color: var(--text-color);
         opacity: 50%;
+        width: fit-content;
         border: 1px solid var(--text-color);
          padding: 5px 10px 5px 10px;
       }

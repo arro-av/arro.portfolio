@@ -10,7 +10,6 @@
       
       <img
         src="../assets/images/arrowicon.svg"
-        alt="An arrow icon - used to navigate to the linked page."
       />
     </a>
 
@@ -22,7 +21,6 @@
 
       <img
         src="../assets/images/arrowicon.svg"
-        alt="An arrow icon - used to navigate to the linked page."
       />
     </a>
 
@@ -34,7 +32,6 @@
 
       <img
         src="../assets/images/arrowicon.svg"
-        alt="An arrow icon - used to navigate to the linked page."
       />
     </a>
 
@@ -46,7 +43,6 @@
 
       <img
         src="../assets/images/arrowicon.svg"
-        alt="An arrow icon - used to navigate to the linked page."
       />
     </a>
   </div>

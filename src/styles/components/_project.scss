@@ -5,6 +5,8 @@
   .backOverview {
     padding: 5px;
     position: fixed;
+    background-color: var(--card---card-background-color);
+
     .backLink {
       display: flex;
       text-decoration: none;

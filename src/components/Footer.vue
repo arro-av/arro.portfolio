@@ -37,6 +37,16 @@ onMounted(() => {
 <template>
   <div class="footer">
     <div class="footerWrapper">
+        <div class="logoContainer">
+          <RouterLink to="/" class="navLink">
+          <img
+            src="../assets/images/logo2.svg"
+            alt="A monochrome logo resembling the initials AR."
+            id="logoImage"
+            style="width: fit-content;"
+          />
+          </RouterLink>
+        </div>
       <div class="footerSocials">
         <h4>Socials</h4>
         <a href="https://www.youtube.com/@arro_av" target="_blank"

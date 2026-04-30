@@ -26,17 +26,6 @@ nav {
     top: 0;
     z-index: 10;
 
-    #logoImage {
-        width: 35px;
-        height: 35px;
-        margin-left: 15px;
-        margin-top: 5px;
-        z-index: 1000;
-
-        opacity: 100%;
-        filter: var(--logo-filter);
-    }
-
 
     #menu {
         display: none;
@@ -169,6 +158,17 @@ nav {
         }
     }
 }
+
+    #logoImage {
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+        margin-top: 5px;
+        z-index: 1000;
+
+        opacity: 100%;
+        filter: var(--logo-filter);
+    }
 
 
 // Mobile Menu

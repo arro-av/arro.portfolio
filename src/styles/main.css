@@ -668,15 +668,6 @@ nav {
   top: 0;
   z-index: 10;
 }
-nav #logoImage {
-  width: 35px;
-  height: 35px;
-  margin-left: 15px;
-  margin-top: 5px;
-  z-index: 1000;
-  opacity: 100%;
-  filter: var(--logo-filter);
-}
 nav #menu {
   display: none;
   cursor: pointer;
@@ -790,6 +781,16 @@ nav ul .light {
 }
 nav ul .light:hover {
   opacity: 100%;
+}
+
+#logoImage {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+  margin-top: 5px;
+  z-index: 1000;
+  opacity: 100%;
+  filter: var(--logo-filter);
 }
 
 .mobile-active {

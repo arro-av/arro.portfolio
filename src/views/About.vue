@@ -13,9 +13,15 @@ import Image from "../components/Image.vue";
         <h2>ROBERT ARDELEANU</h2>
         <p>
           I am a creative coding enthusiast and like experimenting with all sorts of technology. Actually I really love the process of creating stuff as a whole. ツ<br /> <br>
-          <span>MtD Student @FH Hagenberg</span> <br>
-          <span>Linz, Upper Austria</span>
         </p>
+        <div class="iconInfoContainer">
+          <img src="../assets/images/education.svg" alt="Education icon - a graduation cap used to indicate educational background.">
+          <p>MtD Student @FH Hagenberg</p>
+        </div>
+        <div class="iconInfoContainer">
+          <img src="../assets/images/location.svg" alt="Location icon - a pin used to indicate the location of a place.">
+          <p>Linz, Upper Austria</p>
+        </div>
       </div>
     </section>
 

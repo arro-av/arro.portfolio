@@ -12,6 +12,10 @@
       opacity: 40%;
 
       width: fit-content;
+
+      img{
+        filter: var(--svg-filter)
+      }
     }
     .backLink:hover {
       opacity: 1;

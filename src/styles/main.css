@@ -293,6 +293,7 @@ body {
 }
 .aboutSite .aboutGeneral .aboutTextWrapper {
   margin: auto 0;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -305,6 +306,20 @@ body {
     width: 100%;
     text-align: center;
   }
+}
+.aboutSite .aboutGeneral .aboutTextWrapper .iconInfoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutSite .aboutGeneral .aboutTextWrapper .iconInfoContainer img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  filter: var(--svg-filter);
+}
+.aboutSite .aboutGeneral .aboutTextWrapper .iconInfoContainer p {
+  transform: translateY(-5px);
 }
 .aboutSite .aboutGeneral .aboutTextWrapper h2 {
   font-family: "Anek Devanagari", sans-serif;
@@ -331,11 +346,6 @@ body {
   font-size: 1.2rem;
   font-size: 1.1rem;
   margin-top: 10px;
-  margin-bottom: 5px;
-}
-.aboutSite .aboutGeneral .aboutTextWrapper span {
-  opacity: 40%;
-  padding-bottom: 20px;
 }
 .aboutSite .aboutGeneral .aboutTextWrapper a {
   font-family: "Anek Devanagari", sans-serif;
@@ -837,6 +847,9 @@ nav ul .light:hover {
   opacity: 40%;
   width: -moz-fit-content;
   width: fit-content;
+}
+.project .backOverview .backLink img {
+  filter: var(--svg-filter);
 }
 .project .backOverview .backLink:hover {
   opacity: 1;

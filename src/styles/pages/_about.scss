@@ -30,6 +30,7 @@
 
     .aboutTextWrapper {
       margin: auto 0;
+      padding-top: 20px;
 
       display: flex;
       justify-content: space-around;
@@ -40,6 +41,24 @@
       @media (max-width: 800px) {
         width: 100%;
         text-align: center;
+      }
+
+      .iconInfoContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 15px;
+          filter: var(--svg-filter);
+        }
+
+        p{
+          transform: translateY(-5px);
+        }
+
       }
 
       h2 {
@@ -61,13 +80,9 @@
         @include text-font();
         font-size: 1.1rem;
         margin-top: 10px;
-        margin-bottom: 5px;
       }
 
-      span {
-        opacity: 40%;
-        padding-bottom: 20px;
-      }
+
 
       a {
         @include subtitles-font();
@@ -93,7 +108,9 @@
         &:hover {
           opacity: 100%;
         }
+        
       }
     }
   }
+
 }

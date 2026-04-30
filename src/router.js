@@ -13,7 +13,6 @@ import VJ_Setup from "./views/Projects/TD_VJ_Setup.vue";
 import eioeiclub from "./views/Projects/808club.vue";
 import screenprints from "./views/Projects/screenprints.vue";
 import event_posters from "./views/Projects/event_posters.vue";
-import pdf_portfolio from "./views/Projects/pdf_portfolio.vue";
 
 //AV PROJECTS
 import TD_tutorials from "./views/Projects/TD_tutorials.vue";
@@ -75,11 +74,6 @@ const routes = [
     path: "/event_posters",
     name: "event_posters",
     component: event_posters,
-  },
-  {
-    path: "/pdf_portfolio",
-    name: "pdf_portfolio",
-    component: pdf_portfolio,
   },
 
   //AUDIO VISUAL

@@ -18,17 +18,19 @@ import Image from "../components/Image.vue";
           <img src="../assets/images/education.svg" alt="Education icon - a graduation cap used to indicate educational background.">
           <p>MtD Student @FH Hagenberg</p>
         </div>
+        <!--
         <div class="iconInfoContainer">
           <img src="../assets/images/location.svg" alt="Location icon - a pin used to indicate the location of a place.">
           <p>Linz, Upper Austria</p>
         </div>
+        -->
       </div>
     </section>
 
     <section class="aboutDetails">
 
       
-      <Collapsible title="BACKGROUND" isVisible="True">
+      <Collapsible title="BACKGROUND">
         <p>
           While born in Râmnicu Vâlcea, I grew up in Linz from the age of six. One of the first German movies I remember watching was The Land Before Time. I was so invested in those little dinosaurs that I couldn’t accept it ending. That’s when my first crayon comic was born.
           <br> <br>

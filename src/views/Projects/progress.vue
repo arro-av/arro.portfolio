@@ -11,80 +11,80 @@ import Image from "../../components/Image.vue";
 
     <section class="projectOverview">
       <Overview
-        title="Progress v0.1"
-        text="Yet another productivity app — but unlike the usual to-do list, it’s a gamified system with quests, habit tracking, tags, leveling, and more. Currently only for my personal use tho."
+        title="Progress v0.5"
+        text="Yet another productivity app, but unlike the usual to-do list, it’s a gamified pomodoro app with quests, skills, analytics and a progression system. Polish yet to come, but the core features are all there and it’s already a joy to use!"
+        imagePath="/card_thumbails/Progress.jpg"
       />
-
-      <div class="mainProjectContent">
-        <Image src="/project_images/d_progress_img2.jpg" alt="Progress App" />
-        <p class="contentNote">Make your own questlines, put in the sessions, and level up!</p>
-        <Image src="/project_images/d_progress_img1.jpg" alt="Progress App" />
-        <p class="contentNote">You improve in what you measure. Track your skills and bring them to level 60.</p>
-      </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
+      <Collapsible title="OVERVIEW">
         <p>
-            I loved using Habitica but wanted fewer distractions and a stronger focus on habit stacking, splitting projects in quests, and seeing my skills level up. Seeing progress hit <span style="color: #A335EE;">epic</span> or <span style="color: #FF8000;">legendary</span> really keeps me motivated!
+            I love the concept of focused pomodoro sessions, but what i was missing with most apps is the dopamine hit and the capability to visualize my progress. This is what <span style="font-weight: 800;">Progress</span> solves.
         </p>
+        <Image src="/project_images/progress_img1.png" />
 
-        <h4>Tech</h4>
         <p>
-          - HTML / SCSS / JS / TS / Vue.js <br />
-          - Electron <br />
-          - LowDB <br />
-          - Vite
+          <span style="font-weight: 800;">Progress</span> not only allows me to manage personal and uni projects in a fun way, but also helps me track my skill progressions by seeing them level up. <br>
+        </p>
+        <Image src="/project_images/progress_img2.png" />
+
+        <p>
+          It might not be the most user-friendly project management tool out there in the current state, but for me it does the job better than any other tool I have tried. It combines all the features i wanted for my personal workflow, while keeping everything modular and key elements like the pomodoro timer easy to use. 
+        </p>
+        <Image src="/project_images/progress_img3.png" />
+      </Collapsible>
+      <Collapsible title="TECH">
+        <p>
+          → HTML / SCSS / Javascript <br />
+          → Typescript <br />
+          → Vue.js 3 <br />
+          → Pinia <br />
+          → Electron <br />
+          → LowDB <br />
+          → Vite
         </p>
       </Collapsible>
-      <Collapsible title="Features">
+      <Collapsible title="FEATURES">
   <h4>Timer</h4>
   <p>
-    Flexible project timer (1-120 min) with manual time adjustments and Pomodoro-style workflow. Adding time manually also works.
+    Flexible project timer (1-240 min) with manual time adjustments and Pomodoro-style workflow. Adding time manually also works.
   </p>
-  <h4>Quests</h4>
+  <h4>Projects</h4>
   <p>
-    Organize projects into questlines with sub-quests with their own tag and tasks. Each quest has its own rewards based on time spent.
+    Organize projects into Epics with their tasks and skills assigned. Each project has its own completion rewards based on project rank and invested time.
   </p>
-  <h4>Ideas</h4>
+  <h4>Skills</h4>
   <p>
-    Backlog to store ideas. Convert ideas into quests when ready to tackle them.
-  </p>
-  <h4>Habit Stacks</h4>
-  <p>
-    Stack and track habits with streak-based progression and EXP rewards.
-  </p>
-  <h4>Tags</h4>
-  <p>
-    Represent skills or passions. Level them up based on focus time and habit completions.
+    Can be general skills, software proficiencies, or hobbies. Level them up based on focus time and project completions.
   </p>
   <h4>Rewards</h4>
   <p>
     Define your own rewards and purchase them with earned crystals (repeatable or one-time).
   </p>
-  <h4>Progression System</h4>
+  <h4>Statistics</h4>
   <p>
-    Level up tags, habits, and projects with rank progression from Common to Legendary (level cap 60). There is also a global user level progression.
+    Track your progress with various statistics and visualizations. See your skill progression, time invested in projects, and more.
+    <br>
+    ____
   </p>
-  <h4>Future Updates</h4>
+  <br>
+  <h4>Future Updates (v1.0)</h4>
   <p>
-    - Achievements system <br />
-    - Settings (themes, import/export DB) <br />
-    - More advanced statistics <br />
-    - Reworked & more intuitive UI <br />
-    - UI animations & sound effects <br />
-    - Architecture cleanup & DB logic improvements <br />
-    - Reduced file complexity <br />
+    → Fancy UI Animations <br />
+    → Sound Effects for extra motivation <br />
+    → More detailed statistics and visualizations <br />
+    → Extended Settings <br />
+    → Refactor & Bug Fixes <br />
   </p>
 
-  <p style="color: #f01e2c;">Testing Phase: Bug-Logs on GitHub.</p>
+  <p style="color: #f01e2c;">Testing Phase 2.0: Bugs & Tasks on GitHub.</p>
 </Collapsible>
-      <Collapsible title="Resources">
+      <Collapsible title="RESOURCES">
         <p>
           <a
             target="_blank"
-            href="https://github.com/sync-tax/progress_app"
+            href="https://github.com/arro-av/progress_app"
             >→ Codebase on GitHub</a
           >
         </p>

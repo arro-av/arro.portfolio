@@ -30,7 +30,7 @@
 
     .aboutTextWrapper {
       margin: auto 0;
-      padding-top: 20px;
+      padding-top: 35px;
 
       display: flex;
       justify-content: space-around;
@@ -47,7 +47,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        transform: translateY(-12px);
+        transform: translateY(-20px);
 
         img {
           width: 22px;
@@ -58,7 +58,8 @@
         }
 
         p{
-          transform: translateY(-5px);
+          @include text-font();
+          transform: translateY(-3px);
           font-size: 14px;
           opacity: 60%;
         }
@@ -83,6 +84,7 @@
       p {
         @include text-font();
         font-size: 16px;
+        line-height: 30px;
         margin-top: 6px;
       }
 

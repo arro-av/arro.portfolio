@@ -6,6 +6,7 @@
     padding: 5px;
     position: fixed;
     background-color: var(--card---card-background-color);
+    z-index: 1000;
 
     .backLink {
       display: flex;
@@ -31,14 +32,36 @@
     display: flex;
     flex-direction: column;
 
+    .projectHeaderImage {
+      width: 100%;
+      background-size: cover;
+      background-position: top;
+      height: 300px;
+      position: relative;
+        
+      &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, var(--background-color), transparent);
+    pointer-events: none;
+  }
+    }
+
     .textProjectContent {
       padding: 15px;
+      width: 82%;
+      margin: 0 auto;  
+
       h2 {
         @include titles-font();
-        font-size: 4rem;
+        font-size: 56px;
         line-height: 98%;
 
-        margin-top: 35px;
+        margin-bottom: 20px;
         text-align: center;
 
         @media (max-width: 778px) {
@@ -54,12 +77,13 @@
       }
       p {
         @include text-font();
-        font-size: 1.1rem;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
         padding-bottom: 0px;
-        padding-left: 50px;
-        padding-right: 50px;
+        opacity: 60%;
 
-        text-align: center;
+        text-align: left;
 
         @media (max-width: 778px) {
           font-size: 1.1rem;
@@ -76,26 +100,34 @@
     .mainProjectContent {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 100%;
+      width: 82%;
       align-self: center;
 
       .imageContainer {
         display: flex;
-        justify-content: space-around;
-        width: 80%;
+        justify-content: center;
+        width: 100%;
+        align-self: center;
+      }
+
+      
+      .contentNote {
+        padding-top: 15px;
+        opacity: 0.6;
+        width: 100%;
         align-self: center;
 
-        img {
-          width: 40%;
+        @media (max-width: 600px) {
+          width: 90%;
+          text-align: left;
+          margin: 0 auto;
         }
       }
 
       img {
-        align-self: center;
-        border-radius: 10px;
-        margin-top: 30px;
-        width: 60%;
+        align-self: left;
+        margin-top: 20px;
+        width: 100%;
 
         @media (max-width: 778px) {
           width: 90%;
@@ -135,18 +167,6 @@
         }
       }
 
-      .contentNote {
-        padding-top: 15px;
-        opacity: 0.6;
-        width: 60%;
-        align-self: center;
-
-        @media (max-width: 600px) {
-          width: 90%;
-          text-align: left;
-          margin: 0 auto;
-        }
-      }
     }
   }
 }

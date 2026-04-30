@@ -363,33 +363,47 @@ body {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 800px;
   margin: 50px auto;
   padding-top: 20px;
 }
-.linkContainer a {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.4rem;
-  width: 60%;
+.linkContainer .linkWrapper {
+  width: 100%;
   border: 1px solid var(--border-color);
-  border-radius: 15px;
-  padding-top: 6px;
-  margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   color: var(--text-color);
+  padding: 10px 25px 10px 25px;
+  margin-bottom: 40px;
+  background-color: var(--card-background-color);
+  display: flex;
+  justify-content: space-between;
+}
+.linkContainer .linkWrapper:hover {
+  background-color: color-mix(in srgb, var(--text-color) 25%, transparent);
+}
+.linkContainer .linkWrapper h4 {
+  font-family: "Anek Devanagari", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 2px;
+}
+.linkContainer .linkWrapper p {
+  font-family: "space mono", monospace;
+  font-size: 12px;
+  color: var(--text-color);
+  opacity: 50%;
+  transform: translateY(-5px);
+}
+.linkContainer .linkWrapper img {
+  width: 20px;
+  filter: var(--svg-filter);
+  transform: rotate(180deg);
 }
 @media (max-width: 506px) {
-  .linkContainer a {
+  .linkContainer {
     width: 90%;
   }
-}
-.linkContainer a:hover {
-  background-color: var(--text-color);
-  color: var(--background-color);
 }
 
 .headerContainer {

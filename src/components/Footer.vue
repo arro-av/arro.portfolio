@@ -90,7 +90,7 @@ onMounted(() => {
       </div>
     </div>
     <div id="copyrightWrapper">
-      <p>&copy; 2025 Ardeleanu Robert - All Rights Reserved</p>
+      <p>&copy; 2026 Ardeleanu Robert - All Rights Reserved</p>
     </div>
   </div>
 </template>

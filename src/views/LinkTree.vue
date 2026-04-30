@@ -2,17 +2,52 @@
 
 <template>
   <div class="linkContainer">
-    <a href="https://www.youtube.com/@arro_av" target="_blank">YouTube</a>
-    <a href="https://www.instagram.com/arro_av/" target="_blank">Instagram</a>
-    <a href="https://github.com/arro-av" target="_blank">Github</a>
-    <a href="https://soundcloud.com/tribeholz-av" target="_blank">Soundcloud</a>
-    <a
-      href="https://drive.google.com/drive/folders/1Hxd5kI1gWZXB3dU15D3aQc7badd6mQHl?usp=sharing"
-      target="_blank"
-      >TD Files</a
-    >
-    <!--<a href="https://www.instagram.com/durch.durch.durch/" target="_blank"
-      >DURCH</a
-    >-->
+    <a class="linkWrapper" href="https://github.com/arro-av" target="_blank">
+      <div class="linkText">
+        <h4>Github</h4>
+        <p>Source Code, TD Files & Documentation</p>
+      </div>
+      
+      <img
+        src="../assets/images/arrowicon.svg"
+        alt="An arrow icon - used to navigate to the linked page."
+      />
+    </a>
+
+    <a class="linkWrapper" href="https://www.youtube.com/@arro_av" target="_blank">
+      <div class="linkText">
+        <h4>YouTube</h4>
+        <p>Creative Tech, Tutorials & More</p>
+      </div>
+
+      <img
+        src="../assets/images/arrowicon.svg"
+        alt="An arrow icon - used to navigate to the linked page."
+      />
+    </a>
+
+    <a class="linkWrapper" href="https://www.instagram.com/arro_av/" target="_blank">
+      <div class="linkText">
+        <h4>Instagram</h4>
+        <p>Repurposed YT Stuff & Behind the Scenes</p>
+      </div>
+
+      <img
+        src="../assets/images/arrowicon.svg"
+        alt="An arrow icon - used to navigate to the linked page."
+      />
+    </a>
+
+    <a class="linkWrapper" href="https://soundcloud.com/tribeholz-av" target="_blank">
+      <div class="linkText">
+        <h4>Soundcloud</h4>
+        <p>Techno Tracks & Live Extracts</p>
+      </div>
+
+      <img
+        src="../assets/images/arrowicon.svg"
+        alt="An arrow icon - used to navigate to the linked page."
+      />
+    </a>
   </div>
 </template>

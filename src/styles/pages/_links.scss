@@ -4,33 +4,51 @@
   flex-direction: column;
   align-items: center;
 
-  width: 80%;
+  width: 800px;
   margin: 50px auto;
   padding-top: 20px;
 
-  a {
-    @include subtitles-font();
-    font-size: 1.4rem;
-    width: 60%;
-
+  .linkWrapper {
+    width: 100%;
     border: 1px solid var(--border-color);
-    border-radius: 15px;
-
-    padding-top: 6px;
-
-    margin-bottom: 20px;
-
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: var(--text-color);
+    padding: 10px 25px 10px 25px;
+    margin-bottom: 40px;
+    background-color: var(--card-background-color);
+
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+    background-color: color-mix(in srgb, var(--text-color) 25%, transparent);
+    }
+
+    h4{
+      font-family: "Anek Devanagari", sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      padding-top: 2px;
+    }
+
+    p{
+        font-family: "space mono", monospace;
+        font-size: 12px;
+        color: var(--text-color);
+        opacity: 50%;
+        transform: translateY(-5px);
+    }
+
+    img{
+      width: 20px;
+      filter: var(--svg-filter);
+      transform: rotate(180deg);
+    }
+  }
+
 
     @media (max-width: 506px) {
       width: 90%;
     }
-  }
-
-  a:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
-  }
 }

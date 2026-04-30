@@ -12,8 +12,8 @@ import Image from "../components/Image.vue";
         <h5>hi, my name is...</h5>
         <h2>ROBERT ARDELEANU</h2>
         <p>
-          I am a creative coding enthusiast and currently study MtD (BA) at the
-          unviersity of applied sciences @ Campus Hagenberg. <br />
+          I am a creative coding enthusiast and like experimenting with all sorts of technology. Actually I really love the process of creating stuff as a whole. ツ<br />
+          <span>Mediatechnology Student @FH Hagenberg</span> <br>
           <span>Linz, Upper Austria</span>
         </p>
       </div>

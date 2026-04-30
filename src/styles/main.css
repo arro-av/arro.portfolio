@@ -414,7 +414,7 @@ body {
   font-family: "Anek Devanagari", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  padding-top: 2px;
+  margin-top: 5px;
 }
 .linkContainer .linkWrapper p {
   font-family: "Anek Devanagari", sans-serif;
@@ -850,7 +850,6 @@ nav ul .light:hover {
   color: #3366cc;
 }
 .project .backOverview {
-  padding: 5px;
   position: fixed;
   background-color: var(--card---card-background-color);
   z-index: 1000;
@@ -859,7 +858,9 @@ nav ul .light:hover {
   display: flex;
   text-decoration: none;
   color: var(--text-color);
+  background-color: var(--background-color);
   opacity: 40%;
+  padding: 5px;
   width: -moz-fit-content;
   width: fit-content;
 }

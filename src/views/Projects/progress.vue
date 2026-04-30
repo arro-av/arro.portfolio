@@ -12,7 +12,7 @@ import Image from "../../components/Image.vue";
     <section class="projectOverview">
       <Overview
         title="Progress v0.5"
-        text="Yet another productivity app, but unlike the usual to-do list, it’s a gamified pomodoro app with quests, skills, analytics and a progression system. Polish yet to come, but the core features are all there and it’s already a joy to use!"
+        text="Yet another productivity tool, but unlike the usual to-do list, it’s a gamified pomodoro app with quests, skills, analytics and a progression system. Polish yet to come, but the core features are all there. I actually use it on a daily basis!"
         imagePath="/card_thumbails/Progress.jpg"
       />
     </section>

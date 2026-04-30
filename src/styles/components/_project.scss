@@ -3,7 +3,6 @@
     color: #3366cc;
   }
   .backOverview {
-    padding: 5px;
     position: fixed;
     background-color: var(--card---card-background-color);
     z-index: 1000;
@@ -12,7 +11,9 @@
       display: flex;
       text-decoration: none;
       color: var(--text-color);
+      background-color: var(--background-color);
       opacity: 40%;
+      padding: 5px;
 
       width: fit-content;
 

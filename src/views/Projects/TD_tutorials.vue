@@ -21,47 +21,21 @@ onMounted(() => {
     <section class="projectOverview">
       <Overview
         title="TD Tutorials"
-        text="Various Touchdesigner Tutorials I did on YouTube."
+        text="This is a collection of tutorials I made for TouchDesigner, covering a range of topics from beginner to intermediate level. While sharing my knowlege, I also get to solidify my own understanding of the software."
+        imagePath="/card_thumbails/TD_Tuts.jpg"
       />
-      <div class="mainProjectContent">
-        <iframe
-          width="600"
-          height="337"
-          src="https://www.youtube.com/embed/videoseries?si=XO8NCGPKKnPCw6Fk&amp;list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <p class="contentNote">
-          Tuchdesigner tutorials on
-          <a target="_blank" href="https://www.youtube.com/@tribeholz23"
-            >→ YouTube</a
-          >
-        </p>
-      </div>
+
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
-        <p>
-          While I’m not a TouchDesigner pro, they say you learn best when you
-          try to teach — and that’s what these tutorials are all about. I’m also
-          happy if I can help a few people along the way.
+      <Collapsible title="RESOURCES">
+         <p>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"
+            >→ YouTube Playlist</a
+          >
         </p>
-
-        <h4>Tools</h4>
-        <p>
-          - Touchdesigner <br />
-          - Python <br />
-          - GLSL <br />
-          - OBS | Recording <br />
-          - Davinci Resolve | Cutting
-        </p>
-      </Collapsible>
-      <Collapsible title="Resources">
         <p>
           <a
             target="_blank"

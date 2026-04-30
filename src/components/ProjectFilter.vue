@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard.vue";
 const activeFilter = ref(localStorage.getItem("activeFilter") || "ALL PROJECTS");
 
 const projects = ref([
-  //DEVELOPMENT
+  //___1___
   {
     categories: ["DEVELOPMENT"],
     title: "PROGRESS",
@@ -13,19 +13,39 @@ const projects = ref([
     currentProjectView: "/progress",
     imagePath: "/card_thumbails/Progress.jpg",
     link: ["https://github.com/arro-av/progress_app"],
-    tag: ["#APPLICATION", "#ELECTRON", "#VUE.JS"],
+    tag: ["APPLICATION", "ELECTRON", "VUE.JS"],
   },
-
-  //AUDIO VISUAL
+//___2___
   {
     categories: ["AUDIO VISUAL"],
-    title: "TD Tutorials",
+    title: "TD TUTORIALS",
     text: "A collection of TouchDesigner Tutorials I did for my YouTube Channel.",
     currentProjectView: "/TD_tutorials",
     imagePath: "/card_thumbails/TD_Tuts.jpg",
     link: ["https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"],
-    tag: ["#Touchdesigner", "#Tutorials"],
+    tag: ["TOUCHDESIGNER", "TUTORIALS"],
   },
+  //___3___
+    {
+    categories: ["DEVELOPMENT"],
+    title: "ARRO PORTFOLIO",
+    text: "My personal portfolio website, which is constant work in progress. Showcasing my explorations ^^",
+    currentProjectView: "/arro",
+    imagePath: "/card_thumbails/Portfolio.jpg",
+    link: ["https://github.com/arro-av/arro.portfolio"],
+    tag: ["TOUCHDESIGNER", "TUTORIALS"],
+  },
+//___4___
+  {
+    categories: ["AUDIO VISUAL", "DEVELOPMENT"],
+    title: "STRANGE ATTRACTORS",
+    text: "Various Strange Attractor simulations I did using the GLSL language.",
+    currentProjectView: "/strange_attractors",
+    imagePath: "/card_thumbails/Strange_Attractors.jpg",
+    link: ["https://github.com/arro-av/TD_Strange_Attractors_GLSL", "https://www.youtube.com/watch?v=Ty3u7qfPj2E" ],
+    tag: ["GLSL", "TOUCHDESIGNER", "SIMULATION"],
+  },
+
   {
     categories: ["AUDIO VISUAL"],
     title: "Coding Techno",
@@ -33,7 +53,7 @@ const projects = ref([
     currentProjectView: "/coding_techno",
     imagePath: "/card_thumbails/Coding_Techno.jpg",
     link: ["https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"],
-    tag: ["#SonicPi", "Techno", "#LiveSessions"],
+    tag: ["SONIC PI", "TECHNO", "LIVE CODING"],
   }
 ]);
 

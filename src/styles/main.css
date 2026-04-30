@@ -1,6 +1,7 @@
 :root {
   --background-color: white;
   --card-background-color: #f0f0f0;
+  --icon-background-color: #131313;
   --text-color: black;
   --text-thick: 500;
   --border-color: #0E0E0E;
@@ -14,6 +15,7 @@
 .lightmode {
   --background-color: white;
   --card-background-color: #f0f0f0;
+  --icon-background-color: #f0f0f0;
   --text-color: black;
   --text-thick: 500;
   --border-color: #0E0E0E;
@@ -27,6 +29,7 @@
 .darkmode {
   --background-color: #0E0E0E;
   --card-background-color: #131313;
+  --icon-background-color: #f0f0f0;
   --text-color: white;
   --text-thick: 300;
   --border-color: #383838;
@@ -196,20 +199,22 @@ body {
   top: 15px;
   right: 17px;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   z-index: 1000;
-  width: 30px;
-  height: 30px;
-  background-color: var(--card-background-color);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
-  padding-top: 3px;
 }
 .projectListContainer .projectContainer .projectImage .externalLink .externalLinkIcon {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   filter: var(--svg-filter);
   transition: opacity 0.15s ease;
+  background-color: var(--icon-background-color);
+  padding: 5px;
 }
 .projectListContainer .projectContainer .projectTags {
   display: flex;

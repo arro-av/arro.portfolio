@@ -15,81 +15,26 @@ const projects = ref([
     link: ["https://github.com/arro-av/progress_app"],
     tag: ["#APPLICATION", "#ELECTRON", "#VUE.JS"],
   },
-  {
-    categories: ["DEVELOPMENT"],
-    title: "arro.at",
-    currentProjectView: "/arro.at",
-    imagePath: "/bg_images/dev_1.jpg",
-    tag: ["#Webdev", "#Vue.js"],
-  },
-  {
-    categories: ["DEVELOPMENT"],
-    title: "MIDI Boilerplate",
-    currentProjectView: "/MIDI_Boilerplate",
-    imagePath: "/bg_images/dev_2.jpg",
-    tag: ["#SonicPi", "#Tool"],
-  },
-  {
-    categories: ["DEVELOPMENT"],
-    title: "VJ-Setup v1.0",
-    currentProjectView: "/TD_VJ_Setup",
-    imagePath: "/bg_images/dev_3.jpg",
-    tag: ["#Touchdesigner", "#Tool"],
-  },
-
-  //DESIGN
-  {
-    categories: ["DESIGN"],
-    title: "Portfolio PDF",
-    currentProjectView: "/pdf_portfolio",
-    imagePath: "/bg_images/des_4.jpg",
-    tag: ["#Different", "#Stuff"],
-  },
-  {
-    categories: ["DESIGN"],
-    title: "808club.at",
-    currentProjectView: "/808club.at",
-    imagePath: "/bg_images/des_1.jpg",
-    tag: ["#Webdesign", "#Wordpress"],
-  },
-  {
-    categories: ["DESIGN"],
-    title: "Screenprints",
-    currentProjectView: "/screenprints",
-    imagePath: "/bg_images/des_2.jpg",
-    tag: ["#Screenprint", "#Art"],
-  },
-  {
-    categories: ["DESIGN"],
-    title: "Poster & Flyer",
-    currentProjectView: "/event_posters",
-    imagePath: "/bg_images/des_3.jpg",
-    tag: ["#Affinity", "#AdobeCC"],
-  },
-
 
   //AUDIO VISUAL
   {
     categories: ["AUDIO VISUAL"],
     title: "TD Tutorials",
+    text: "A collection of TouchDesigner Tutorials I did for my YouTube Channel.",
     currentProjectView: "/TD_tutorials",
-    imagePath: "/bg_images/av_1.jpg",
+    imagePath: "/card_thumbails/TD_Tuts.jpg",
+    link: ["https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"],
     tag: ["#Touchdesigner", "#Tutorials"],
   },
   {
     categories: ["AUDIO VISUAL"],
     title: "Coding Techno",
+    text: "A project series focused on coding techno music using the live coding environment SonicPi.",
     currentProjectView: "/coding_techno",
-    imagePath: "/bg_images/av_2.jpg",
-    tag: ["#LiveSessions", "#SonicPi", "Techno"],
-  },
-  {
-    categories: ["AUDIO VISUAL"],
-    title: "808Spotlight",
-    currentProjectView: "/808Spotlight",
-    imagePath: "/bg_images/av_3.jpg",
-    tag: ["#Deep Space", "#AEC", "#TD"],
-  },
+    imagePath: "/card_thumbails/Coding_Techno.jpg",
+    link: ["https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"],
+    tag: ["#SonicPi", "Techno", "#LiveSessions"],
+  }
 ]);
 
 const filteredProjects = computed(() => {

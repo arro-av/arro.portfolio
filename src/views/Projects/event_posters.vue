@@ -12,66 +12,60 @@ import Image from "../../components/Image.vue";
     <section class="projectOverview">
       <Overview
         title="Event Posters"
-        text="Poster & Flyer Designs I made for the 808Club."
+        text="Various flyer designs I made primarily for our club 808club. These here are exclusively pieces I designed for real events. I am looking forward to be designing such things for other projects in the future as well."
+        imagePath="/card_thumbails/Fyler_Designs.jpg"
       />
 
-      <div class="mainProjectContent">
-        <div class="imageContainer">
-          <Image src="/project_images/d_808_img2.jpg" alt="Flyer" />
-          <Image src="/project_images/d_808_img3.jpg" alt="Flyer" />
-        </div>
-
-        <p style="text-align: center" class="contentNote">
-          Flyer - House of Arts #1- Affinity & Procreate
-        </p>
-
-        <p style="text-align: center" class="contentNote">
-          Flyer - Game of Skate #1- Affinity
-        </p>
-
-        <div class="imageContainer">
-          <Image src="/project_images/d_808_img5.jpg" alt="Flyer" />
-          <Image src="/project_images/d_808_img4.jpg" alt="Flyer" />
-        </div>
-        <p style="text-align: center" class="contentNote">
-          Flyer - House of Arts #2- Photoshop | Event sadly canceled :(
-        </p>
-
-        <p style="text-align: center" class="contentNote">
-          Flyer - Game of Skate #2- Affinity
-        </p>
-      </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
-        <p>
-          The 808Club is an art and culture collective based in Linz. Together
-          with a group of friends, we organize various events and creative
-          projects.
+      <Collapsible title="HOUSE OF ARTS">
+          <p>
+          House of Arts #1- Affinity & Procreate
         </p>
-        <h4>Role</h4>
-        <p>
-          As a board member, I contribute to event organization, create designs,
-          and manage the club’s web presence.
+          <Image src="/project_images/d_808_img2.jpg" alt="Flyer" style="width: 500px;" />
+
+
+        
+
+         <p>
+          House of Arts #2- Photoshop | Event sadly canceled
         </p>
+
+          <Image src="/project_images/d_808_img5.jpg" alt="Flyer" style="width: 500px;" />
+       
+
+        
       </Collapsible>
 
-      <Collapsible title="Resources">
+            <Collapsible title="GAME OF SKATE">
+  
+          <p>
+          Game of Skate #1- Affinity
+        </p>
+          <Image src="/project_images/d_808_img3.jpg" alt="Flyer" style="width: 500px;" />
+
+        
+
+
+          <p>
+          Game of Skate #2- Affinity
+        </p>
+
+          <Image src="/project_images/d_808_img4.jpg" alt="Flyer" style="width: 500px;" />
+       
+
+        
+      </Collapsible>
+
+      <Collapsible title="RESOURCES">
         <p>
+
           <a
-            href="https://www.instagram.com/808club_linz/"
+            href="https://808club.at/events/"
             target="_blank"
             rel="noopener noreferrer"
-            >→ Instagram @808club_linz</a
-          >
-          <br />
-          <a
-            href="https://808club.x-net.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >→ Website 808Club</a
+            >→ Events 808Club</a
           >
         </p>
       </Collapsible>

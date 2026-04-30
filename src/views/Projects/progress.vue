@@ -18,7 +18,7 @@ import Image from "../../components/Image.vue";
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="OVERVIEW">
+      <Collapsible title="ABOUT">
         <p>
             I love the concept of focused pomodoro sessions, but what i was missing with most apps is the dopamine hit and the capability to visualize my progress. This is what <span style="font-weight: 800;">Progress</span> solves.
         </p>
@@ -42,7 +42,8 @@ import Image from "../../components/Image.vue";
           → Pinia <br />
           → Electron <br />
           → LowDB <br />
-          → Vite
+          → Vite <br>
+          → Figma 
         </p>
       </Collapsible>
       <Collapsible title="FEATURES">

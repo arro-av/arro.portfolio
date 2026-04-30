@@ -980,17 +980,6 @@ nav ul .light:hover {
     width: 90%;
   }
 }
-.project .projectOverview .mainProjectContent pre {
-  margin-top: 30px;
-  align-self: center;
-  width: 60%;
-}
-@media (max-width: 600px) {
-  .project .projectOverview .mainProjectContent pre {
-    font-size: 0.8rem;
-    width: 90%;
-  }
-}
 .project .projectOverview .mainProjectContent iframe {
   align-self: center;
   border-radius: 10px;
@@ -1011,6 +1000,18 @@ nav ul .light:hover {
 @media (max-width: 778px) {
   .project .projectOverview .mainProjectContent video {
     width: 60%;
+  }
+}
+
+pre {
+  margin-top: 30px;
+  align-self: center;
+  width: 60%;
+}
+@media (max-width: 600px) {
+  pre {
+    font-size: 0.8rem;
+    width: 90%;
   }
 }
 

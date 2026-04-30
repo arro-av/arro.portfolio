@@ -12,53 +12,46 @@ import Image from "../../components/Image.vue";
     <section class="projectOverview">
       <Overview
         title="Screenprints"
-        text="Printdesigns I made for our screenprinting collective. → DURCH"
+        text="The idea of individualizing my own wardrobe always kinda appealed to me. I have been designing and drawing for quite some time now, and started screeenprinting 5 years ago. By now I have my own small printing workshop at home."
+        imagePath="/card_thumbails/Screenprints.jpg"
       />
 
       <div class="mainProjectContent">
-        <Image src="/project_images/d_durch_img3.jpg" alt="Printdesign" />
-        <p class="contentNote">Printdesign - Big Brother - Procreate & TD</p>
 
-        <Image src="/project_images/d_durch_img2.jpg" alt="Printdesign" />
-        <p class="contentNote">Printdesign - Random Doodle - Procreate</p>
 
-        <Image src="/project_images/d_durch_img4.jpg" alt="Printdesign" />
-        <p class="contentNote">Printdesign - Bananana - TD</p>
 
-        <Image src="/project_images/d_durch_img1.jpg" alt="Printdesign" />
-        <p class="contentNote">
-          Printdesign - Beeware - Ink Marker & Illustrator
-        </p>
-
-        <Image src="/project_images/d_durch_img5.jpg" alt="Printdesign" />
-        <p class="contentNote">Printdesign - VOID - Touchdesigner</p>
-
-        <Image src="/project_images/d_durch_img6.jpg" alt="Printdesign" />
-        <p class="contentNote">
-          Printdesign - Shroompa Mario - Inkpens & Procreate
-        </p>
-
-        <Image src="/project_images/d_durch_img7.jpg" alt="Printdesign" />
-        <p class="contentNote">Printdesign - Wond - Procreate</p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
-        <p>
-          A couple of friends and I started a small artist collective where we
-          create print designs and screen print them in my home workshop.
-        </p>
+      <Collapsible title="PRINTS">
+        <p>Big Brother - Procreate & TouchDesigner</p>
+        <Image src="/project_images/d_durch_img3.jpg" alt="Printdesign" />
 
-        <h4>Tools</h4>
+        <p>Doooooodle - Procreate</p>
+        <Image src="/project_images/d_durch_img2.jpg" alt="Printdesign" />
+        
+        <p>Bananana - TouchDesigner</p>
+        <Image src="/project_images/d_durch_img4.jpg" alt="Printdesign" />
+        
         <p>
-          - Screenprinting stuff <br />
-          - Pens & Paper <br />
-          - Designsoftware
+          Beeware - Ink Marker & Illustrator
         </p>
+        <Image src="/project_images/d_durch_img1.jpg" alt="Printdesign" />
+       
+        <p>VOID - Touchdesigner</p>
+        <Image src="/project_images/d_durch_img5.jpg" alt="Printdesign" />
+        
+        <p>
+          Shroompa Mario - Inkpens & Procreate
+        </p>
+        <Image src="/project_images/d_durch_img6.jpg" alt="Printdesign" />
+        
+      <p>Wond - Procreate</p>
+        <Image src="/project_images/d_durch_img7.jpg" alt="Printdesign" />
+        
       </Collapsible>
-      <Collapsible title="Resources">
+      <Collapsible title="RESOURCES">
         <p>
           <a
             href="https://www.instagram.com/durch.durch.durch/"

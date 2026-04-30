@@ -12,32 +12,20 @@ import Image from "../../components/Image.vue";
     <section class="projectOverview">
       <Overview
         title="808club.at"
-        text="A website I created for our Arts & Culture club."
+        text="As part of the 808club team, I created the club's website to post upcoming events and other relevant information. The website is built using Wordpress and Elementor, allowing for easy updates and management."
+        imagePath="/card_thumbails/www.808club.at.jpg"
       />
-
-      <div class="mainProjectContent">
-        <Image src="/project_images/d_websites_img1.jpg" alt="Website" />
-
-        <p class="contentNote">www.808club.at</p>
-      </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
+      <Collapsible title="TECH">
         <p>
-          I made this website for our club to post upcoming events on and a
-          bunch of other stuff.<br />
-        </p>
-        <h4>Tools</h4>
-        <p>
-          - Wordpress <br />
-          - Elementor <br />
-          - Other Plugins
+          → Wordpress <br />
+          → Elementor 
         </p>
       </Collapsible>
 
-      <Collapsible title="Resources">
+      <Collapsible title="RESOURCES">
         <p>
           <a href="https://808club.at" target="_blank" rel="noopener noreferrer"
             >→ Website 808Club</a

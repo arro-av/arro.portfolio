@@ -11,57 +11,38 @@ import Image from "../../components/Image.vue";
 
     <section class="projectOverview">
       <Overview
-        title="arro.at"
-        text="My personal portfolio website, built with Vue.js"
+        title="arro Portfolio"
+        text="This portfolio website, which allows me to share my personal and university related projects, as well as my growth as a creative technologist. It’s a constant work in progress, and I’ll continue to expand it along the way."
+        imagePath="/card_thumbails/Portfolio.jpg"
       />
-
-      <div class="mainProjectContent">
-        <Image src="/project_images/d_websites_img2.png" alt="Website" />
-        <p class="contentNote">made with ♡ and a whole lot of coffee^^</p>
-      </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
+      <Collapsible title="TECH">
         <p>
-          This portfolio is a work in progress, and I’ll continue to expand it
-          as I grow my skills and develop new projects. <br />
-          "arro" is a shorthand for my name.
-        </p>
-
-        <h4>Tech</h4>
-        <p>
-          - VS Code <br />
-          - HTML / SCSS / Vue.js <br />
-          - THREE <br />
-          - Vite <br />
-          - Netlify
+          → HTML / SCSS / Javascript <br />
+          → Vue.js 3 <br />
+          → THREE.js <br />
+          → Vite <br />
+          → Netlify <br />
+          → Figma 
         </p>
       </Collapsible>
-      <Collapsible title="Features">
-        <h4>Current</h4>
+      <Collapsible title="FEATURES">
         <p>
-          - Project Filter <br />
-          - Light & Dark Mode <br />
-          - Collapsibles <br />
-          - NJAN Easter Egg <br />
-          - THREE interactive Hero <br />
-          - Responsive Design
-        </p>
-        <h4>Future Updates</h4>
-        <p>
-          - Multilayer filter (as project base grows and diversifies) <br />
-          - Prerendered pages (SEO) <br />
-          - Contact Form <br />
-          - ...
+          → Project Filter <br />
+          → Light & Dark Mode <br />
+          → Collapsibles <br />
+          → NJAN Easter Egg <br />
+          → THREE interactive Hero <br />
+          → Responsive Design
         </p>
       </Collapsible>
-      <Collapsible title="Resources">
+      <Collapsible title="RESOURCES">
         <p>
           <a
             target="_blank"
-            href="https://github.com/sync-tax/tribeholz_portfolio"
+            href="https://github.com/arro-av/arro.portfolio"
             >→ Codebase on GitHub</a
           >
         </p>

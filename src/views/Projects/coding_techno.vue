@@ -10,55 +10,50 @@ import Overview from "../../components/ProjectOverview.vue";
 
     <section class="projectOverview">
       <Overview
-        title="Coding Techno"
-        text="This was the first series I created on coding with SonicPi. It focused
-          on experimentation and developing a workflow."
+        title="Coding Sound"
+        text="When i discovered SonicPi, I was amazed by the idea of creating music through code. It opened up a whole new world of possibilities for me, and I started experimenting with it right away. I love this piece of software eversince."
+        imagePath="/card_thumbails/Coding_Techno.jpg"
       />
 
-      <div class="mainProjectContent">
-        <iframe
-          width="600"
-          height="337"
-          src="https://www.youtube.com/embed/videoseries?si=cQ-cdKx3yKNn4xmz&amp;list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <p class="contentNote">Playlist - Coding Techno with SonicPi</p>
-      </div>
+      
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
-        <p>
-          I never intended to explore electronic music production, but that
-          changed when I discovered SonicPi. Since then, I've developed a deep
-          passion for creative coding.
-        </p>
-        <h4>Tools</h4>
-        <p>
-          - SonicPi <br />
-          - Ruby
-        </p>
+      <Collapsible title="MIDI LIVE SESSION">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/s2NJrpKzkfQ?si=d48rpA60YI1kL5PM"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </Collapsible>
 
-      <Collapsible title="Resources">
+      <Collapsible title="CODING TECHNO">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/s22yDfzhWoU?si=COQA_DoxZE3mcwwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Collapsible>
+
+      <Collapsible title="RESOURCES">
         <p>
           <a
             target="_blank"
-            href="https://github.com/sync-tax/TechnoSession-1/blob/main/TechnoSession%231.rb"
-            >→ Ruby-File | First</a
+            href="https://github.com/arro-av/archive.sonicpipatches"
+            >→ Archive of SonicPi Patches</a
           >
+          <br>
+          <a
+          target="_blank"
+          href="https://github.com/arro-av/sonicpi_livejam_boilerplate/blob/main/live_jam_boilerplate.rb"
+          >→ Ruby-File | Live Jam Boilerplate</a
+        >
+        <br>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=s2NJrpKzkfQ&list=PLFLuAZh6tS3LepaSGIK9-x468r-3yD4MP"
+            >→ YouTube Playlist | MIDI Sessions</a>
           <br />
           <a
             target="_blank"
             href="https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA"
-            >→ Playlist | YouTube</a
+            >→ Playlist | Coding Techno</a
           >
         </p>
+
+
       </Collapsible>
     </section>
   </div>

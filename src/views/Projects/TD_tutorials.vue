@@ -28,7 +28,7 @@ onMounted(() => {
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="RESOURCES">
+        <Collapsible title="RESOURCES">
          <p>
           <a
             target="_blank"
@@ -43,6 +43,24 @@ onMounted(() => {
             >→ Tutorial Files + Assets</a
           >
         </p>
+      </Collapsible>
+      <Collapsible title="SPIRAL BANANA">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/093l7at3phA?si=cXa1TXao2kWWFYhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Collapsible>
+            <Collapsible title="STRANGE ATTRACTOR">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/Ty3u7qfPj2E?si=dZSUhSgTcBR6IP0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Collapsible>
+            <Collapsible title="POKEMORPH SHADER">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/l1wTkWRXGMg?si=P4UnQY6eRIrtAfUf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Collapsible>
+            <Collapsible title="INSTANCE DISPLACEMENT">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/GtS-Kc-UkYI?si=vLAi9XUSeBd6doBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Collapsible>
+            <Collapsible title="CACHING CALEIDOSCOPE">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/XJpCGcrML-E?si=BwrjvjKekMg5FP0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Collapsible>
+            <Collapsible title="FUNKY AUDIOSPECTRUM">
+        <iframe width="810" height="460" src="https://www.youtube.com/embed/h-AJN-XxsGE?si=TfpGFDVJB7g5a8fK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </Collapsible>
     </section>
   </div>

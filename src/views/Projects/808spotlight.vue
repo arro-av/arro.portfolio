@@ -12,46 +12,47 @@ import Image from "../../components/Image.vue";
     <section class="projectOverview">
       <Overview
         title="808Spotlight"
-        text="A concert we organized at Ars Electronica Deep Space. | Video on YouTube soon →"
+        text="I had the opportunity to create the visuals for a concert in the Ars Electronica Deep Space 8K, as part of the 808Spotlight event. I designed and built an interactive visual system that was controlled in real-time using a MIDI controller, allowing me to manipulate procedural visuals during the performance."
+        imagePath="/card_thumbails/808_Spotlight.jpg"
       />
 
       <div class="mainProjectContent">
-        <Image src="/project_images/o_events_img5.jpg" alt="Spotlight" />
-        <p class="contentNote">Intro Visual | 808</p>
 
-        <Image src="/project_images/o_events_img1.jpg" alt="Spotlight" />
-        <p class="contentNote">Visual | Luzius P</p>
-
-        <Image src="/project_images/o_events_img2.jpg" alt="Spotlight" />
-        <p class="contentNote">Visual | Blue</p>
       </div>
     </section>
 
     <section class="projectDetails">
-      <Collapsible title="Overview">
-        <h4>About</h4>
-        <p>
-          This project aimed to create an interactive realtime visual experience
-          for the 808Spotlight concert.
-        </p>
+      <Collapsible title="VISUALS OVERVIEW">
+        <p>Intro Visual | 808</p>
+        <Image src="/project_images/o_events_img5.jpg" alt="Spotlight" />
 
-        <h4>Role</h4>
-        <p>
-          I designed and built the visual system and integrated it with a MIDI
-          controller to trigger and manipulate procedural visuals in real-time.
-          I also performed the visualisation during the concert.
-        </p>
-
-        <h4>Tools</h4>
-        <p>
-          - Touchdesigner <br />
-          - Python <br />
-          - MIDI Controller
-        </p>
+         <p>Visual | Luzius P</p>
+        <Image src="/project_images/o_events_img1.jpg" alt="Spotlight" />
+       
+      <p>Visual | Blue</p>
+        <Image src="/project_images/o_events_img2.jpg" alt="Spotlight" />
+      
       </Collapsible>
 
-      <Collapsible title="Resources">
+        <Collapsible title="PERFORMANCE SETUP">
+                  <p>
+          Here’s the basic setup – each visual is housed in its own Base
+          component. I MIDI-mapped each value, but you can also just use the
+          sliders in the 'Constant CHOP'.
+          <br>
+          <a target="_blank" href="https://drive.google.com/drive/folders/1q3PbSq1VdNGDDjJ9tW2eAR2bjTQ2lTS3?usp=sharing"
+            >→ TOE File</a>
+        </p>
+           <Image src="/project_images/v_spotlight_img2.jpg" alt="VJ_System" />
+        
+
+        </Collapsible>
+
+      <Collapsible title="RESOURCES">
         <p>
+          <a target="_blank" href="https://www.youtube.com/watch?v=R6qUNRbgmk4"
+            >→ YouTube Video</a>
+            <br>
           <a target="_blank" href="https://808club.x-net.dev/808-spotlight/"
             >→ Website Entry</a
           >

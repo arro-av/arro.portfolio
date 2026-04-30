@@ -36,6 +36,7 @@ const projects = ref([
     tag: ["TOUCHDESIGNER", "TUTORIALS"],
   },
 //___4___
+/* TO BE ADDED LATER - HAVE NOT PUSHED ALL ATTRACTORS TO GITHUB
   {
     categories: ["AUDIO VISUAL", "DEVELOPMENT"],
     title: "STRANGE ATTRACTORS",
@@ -45,6 +46,7 @@ const projects = ref([
     link: ["https://github.com/arro-av/TD_Strange_Attractors_GLSL", "https://www.youtube.com/watch?v=Ty3u7qfPj2E" ],
     tag: ["GLSL", "TOUCHDESIGNER", "SIMULATION"],
   },
+  */
 //___5___
   {
     categories: ["AUDIO VISUAL"],
@@ -94,6 +96,7 @@ const projects = ref([
     tag: ["MARKETING", "AFFINITY"],
   },
   //___10___
+  /* TO BE ADDED LATER - HAVE NOT GATHERED PROJECTS YET
   {
     categories: ["DEVELOPMENT", "DESIGN"],
     title: "SIDEPROJECTS HAGENBERG",
@@ -102,6 +105,7 @@ const projects = ref([
     imagePath: "/card_thumbails/Hagenberg.jpg",
     tag: ["SCHOOL PROJECTS", "ASSIGNMENTS"],
   },
+  */
 ]);
 
 const filteredProjects = computed(() => {

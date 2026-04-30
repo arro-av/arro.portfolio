@@ -266,7 +266,7 @@ body {
 .aboutSite .aboutGeneral {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -297,6 +297,8 @@ body {
   justify-content: space-around;
   flex-direction: column;
   width: 200%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (max-width: 800px) {
   .aboutSite .aboutGeneral .aboutTextWrapper {
@@ -328,9 +330,12 @@ body {
   font-weight: var(--text-thick);
   font-size: 1.2rem;
   font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .aboutSite .aboutGeneral .aboutTextWrapper span {
   opacity: 40%;
+  padding-bottom: 20px;
 }
 .aboutSite .aboutGeneral .aboutTextWrapper a {
   font-family: "Anek Devanagari", sans-serif;

@@ -3,10 +3,10 @@ import { ref } from "vue";
 
 const props = defineProps({
   title: String,
-  text: String,
+  isVisible: Boolean,
 });
 
-const isVisible = ref(false);
+const isVisible = ref(false) || isVisible;
 </script>
 
 <template>

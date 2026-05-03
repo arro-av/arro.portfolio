@@ -82,6 +82,10 @@ const routes = [
   },
 ];
 
+const projectRoutes = routes
+  .filter((route) => !["/", "/About", "/LinkTree"].includes(route.path))
+  .map((route) => route.path);
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
@@ -91,7 +95,7 @@ const router = createRouter({
     }
 
     if (to.path === "/" && projectRoutes.includes(from.path)) {
-      return { top: 510 };
+      return { top: 460 };
     }
 
     return { top: 0 };

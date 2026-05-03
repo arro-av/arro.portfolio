@@ -13,9 +13,9 @@
   filter: var(--logo-filter);
 
 
-  @media (max-width: 900px) {
-    height: 350px;
-  }
+@media (max-width: 1000px) {
+      height: 350px;
+    }
 
   @media (max-width: 600px) {
     height: 250px;

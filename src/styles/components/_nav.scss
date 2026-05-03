@@ -3,8 +3,7 @@
     margin-right: 0px;
 
     @media(max-width: 506px) {
-      padding-right: 0;
-      border-right: none;
+      display: none;
     }
 }
 

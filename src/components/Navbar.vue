@@ -110,7 +110,7 @@ onMounted(() => {
         <li>ΛBOUT</li>
       </RouterLink>
       <RouterLink to="/LinkTree" class="navLink" @click="toggleMenu">
-        <li id="lastNavLink">LIΠKS</li>
+        <li>LIΠKS</li>
       </RouterLink>
       <li id="lastNavLink" style="opacity: 30%; margin-top: 2px;">|</li>
 

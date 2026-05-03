@@ -15,8 +15,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 30px;
-      margin-bottom: 5px;
-      margin-top: 15px;
+      margin-bottom: 20px;
       opacity: 70%;
     }
 
@@ -24,6 +23,7 @@
       @include subtitles-font();
       font-weight: 500;
       font-size: 18px;
+      margin-top: 10px;
     }
 
     .collapspreview {

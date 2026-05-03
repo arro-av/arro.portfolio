@@ -32,22 +32,22 @@ const projects = ref([
 //___2___
   {
     categories: ["AUDIO VISUAL"],
-    title: "TD TUTORIALS",
-    text: "A collection of TouchDesigner Tutorials done for my YouTube Channel.",
-    currentProjectView: "/TD_tutorials",
-    imagePath: "/card_thumbails/TD_Tuts.jpg",
-    link: ["https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"],
-    tag: ["TUTORIALS", "TOUCHDESIGNER"],
+    title: "SPOTLIGHT",
+    text: "Visuals done for a concert in the Ars ELectronica Deep Space 8K.",
+    currentProjectView: "/808Spotlight",
+    imagePath: "/card_thumbails/808_Spotlight.jpg",
+    link: ["https://www.youtube.com/watch?v=R6qUNRbgmk4", "https://808club.x-net.dev/808-spotlight/"],
+    tag: ["PERFORMANCE", "AEC", "DEEPSPACE"],
   },
+
   //___3___
     {
-    categories: ["DEVELOPMENT"],
-    title: "ARRO PORTFOLIO",
-    text: "My personal portfolio website, which is constant work in progress.",
-    currentProjectView: "/arro",
-    imagePath: "/card_thumbails/Portfolio.jpg",
-    link: ["https://github.com/arro-av/arro.portfolio"],
-    tag: ["WEBSITE", "VUE.JS", "THREE.JS"],
+    categories: ["DESIGN"],
+    title: "SCREENPRINTS",
+    text: "Shirt Designs for my little at home screenprinting workshop.",
+    currentProjectView: "/screenprints",
+    imagePath: "/card_thumbails/Screenprints.jpg",
+  tag: ["SCREENPRINTS", "INKSCAPE"],
   },
 //___4___
 /* TO BE ADDED LATER - HAVE NOT PUSHED ALL ATTRACTORS TO GITHUB
@@ -74,12 +74,12 @@ const projects = ref([
   //___6___
   {
     categories: ["AUDIO VISUAL"],
-    title: "SPOTLIGHT",
-    text: "Visuals done for a concert in the Ars ELectronica Deep Space 8K.",
-    currentProjectView: "/808Spotlight",
-    imagePath: "/card_thumbails/808_Spotlight.jpg",
-    link: ["https://www.youtube.com/watch?v=R6qUNRbgmk4", "https://808club.x-net.dev/808-spotlight/"],
-    tag: ["PERFORMANCE", "AEC", "DEEPSPACE"],
+    title: "TD TUTORIALS",
+    text: "A collection of TouchDesigner Tutorials done for my YouTube Channel.",
+    currentProjectView: "/TD_tutorials",
+    imagePath: "/card_thumbails/TD_Tuts.jpg",
+    link: ["https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"],
+    tag: ["TUTORIALS", "TOUCHDESIGNER"],
   },
   //___7___
   {
@@ -92,13 +92,14 @@ const projects = ref([
     tag: ["WEBSITE", "WORDPRESS", "ELEMENTOR"],
   },
   //___8___
-  {
-    categories: ["DESIGN"],
-    title: "SCREENPRINTS",
-    text: "Shirt Designs for my little at home screenprinting workshop.",
-    currentProjectView: "/screenprints",
-    imagePath: "/card_thumbails/Screenprints.jpg",
-  tag: ["SCREENPRINTS", "INKSCAPE"],
+    {
+    categories: ["DEVELOPMENT"],
+    title: "ARRO PORTFOLIO",
+    text: "My personal portfolio website, which is constant work in progress.",
+    currentProjectView: "/arro",
+    imagePath: "/card_thumbails/Portfolio.jpg",
+    link: ["https://github.com/arro-av/arro.portfolio"],
+    tag: ["WEBSITE", "VUE.JS", "THREE.JS"],
   },
   //___9___
     {

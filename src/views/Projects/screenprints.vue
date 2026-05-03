@@ -25,30 +25,30 @@ import Image from "../../components/Image.vue";
 
     <section class="projectDetails">
       <Collapsible title="PRINTS">
-        <p>Big Brother - Procreate & TouchDesigner</p>
+        
         <Image src="/project_images/d_durch_img3.jpg" alt="Printdesign" />
+        <p>Big Brother - Procreate & TouchDesigner</p>
 
-        <p>Doooooodle - Procreate</p>
         <Image src="/project_images/d_durch_img2.jpg" alt="Printdesign" />
+         <p>Doooooodle - Procreate</p>
         
-        <p>Bananana - TouchDesigner</p>
         <Image src="/project_images/d_durch_img4.jpg" alt="Printdesign" />
-        
+        <p>Bananana - TouchDesigner</p>
+
+        <Image src="/project_images/d_durch_img1.jpg" alt="Printdesign" />
         <p>
           Beeware - Ink Marker & Illustrator
         </p>
-        <Image src="/project_images/d_durch_img1.jpg" alt="Printdesign" />
-       
-        <p>VOID - Touchdesigner</p>
-        <Image src="/project_images/d_durch_img5.jpg" alt="Printdesign" />
+
         
-        <p>
+        <Image src="/project_images/d_durch_img5.jpg" alt="Printdesign" />
+        <p>Soundsystem - Procreate</p>
+        
+       
+        <Image src="/project_images/d_durch_img6.jpg" alt="Printdesign" />
+         <p>
           Shroompa Mario - Inkpens & Procreate
         </p>
-        <Image src="/project_images/d_durch_img6.jpg" alt="Printdesign" />
-        
-      <p>Wond - Procreate</p>
-        <Image src="/project_images/d_durch_img7.jpg" alt="Printdesign" />
         
       </Collapsible>
       <Collapsible title="RESOURCES">

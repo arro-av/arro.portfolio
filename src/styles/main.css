@@ -740,11 +740,53 @@ nav {
 nav #menu {
   display: none;
   cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
   margin-right: 10px;
   margin-top: 0px;
   width: 40px;
   height: 40px;
-  filter: var(--svg-filter);
+  position: relative;
+  opacity: 40%;
+  transition: opacity 0.2s ease;
+}
+nav #menu:hover {
+  opacity: 100%;
+}
+nav #menu:focus-visible {
+  opacity: 100%;
+  outline: 2px solid var(--text-color);
+  outline-offset: 3px;
+}
+nav #menu.open {
+  opacity: 100%;
+}
+nav #menu .menuLine {
+  position: absolute;
+  left: 7px;
+  width: 26px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text-color);
+  transition: transform 0.28s ease, top 0.28s ease, opacity 0.2s ease;
+}
+nav #menu .top {
+  top: 13px;
+}
+nav #menu .bottom {
+  top: 23px;
+}
+nav #menu.open .top {
+  top: 18px;
+  transform: rotate(45deg);
+}
+nav #menu.open .bottom {
+  top: 18px;
+  transform: rotate(-45deg);
 }
 @media (max-width: 506px) {
   nav #menu {
@@ -754,6 +796,7 @@ nav #menu {
 nav ul {
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 @media (max-width: 506px) {
   nav ul {
@@ -767,7 +810,7 @@ nav ul {
     z-index: 9;
     background: var(--background-color);
     border-bottom: 2px solid var(--border-color);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform: translateY(-150%);
   }
 }

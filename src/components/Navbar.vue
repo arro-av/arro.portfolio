@@ -90,13 +90,18 @@ onMounted(() => {
     </div>
     
 
-    <img
-      src="../assets/images/menu_icon.svg"
-      alt="Menu Icon"
+    <button
+      type="button"
       id="menu"
+      class="menuToggle"
+      :class="{ open: menuOpen }"
+      :aria-expanded="menuOpen"
+      aria-label="Toggle navigation menu"
       @click="toggleMenu"
-      :style="{ opacity: menuOpen ? '100%' : '30%' }"
-    />
+    >
+      <span class="menuLine top"></span>
+      <span class="menuLine bottom"></span>
+    </button>
 
     <ul :class="{ 'mobile-active': menuOpen }">
 

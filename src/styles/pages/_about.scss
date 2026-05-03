@@ -14,16 +14,16 @@
     }
 
     img {
-      max-width: 40%;
+      max-width: 250px;
       height: auto;
 
       @media (max-width: 800px) {
-        max-width: 60%;
+        max-width: 200px;
         margin: 0 auto;
       }
 
       @media (max-width: 500px) {
-        max-width: 80%;
+        max-width: 200px;
         margin: 0 auto;
       }
     }
@@ -37,6 +37,10 @@
       flex-direction: column;
       width: 200%;
       height: fit-content;
+
+       @media (max-width: 800px) {
+        padding-top: 0px;
+      }
 
       @media (max-width: 800px) {
         width: 100%;
@@ -110,10 +114,6 @@
         color: var(--background-color);
 
         opacity: 60%;
-
-        @media (max-width: 800px) {
-          margin: 20px auto;
-        }
 
         &:hover {
           opacity: 100%;

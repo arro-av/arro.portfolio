@@ -32,7 +32,7 @@ import Image from "../components/Image.vue";
       
       <Collapsible title="BACKGROUND">
         <p>
-          While born in Râmnicu Vâlcea, I grew up in Linz from the age of six. One of the first German movies I remember watching was The Land Before Time. I was so invested in those little dinosaurs that I couldn’t accept it ending. That’s when my first crayon comic was born.
+          While born in Romania, I grew up in Austria from the age of six. One of the first German movies I remember watching was The Land Before Time. I was so invested in those little dinosaurs that I couldn’t accept it ending. That’s when my first crayon comic was born.
           <br> <br>
           I’ve always loved making stuff. Random scribbles on my parents’ walls. This first hairdresser job at my cousin’s place, even though our moms said scissors were a NoNo (we looked fresh tho). Saving up for an Elgato for 6 months straight, so I could upload SICK let’s plays to YouTube. 
           <br> <br>

@@ -28,22 +28,7 @@ onMounted(() => {
     </section>
 
     <section class="projectDetails">
-        <Collapsible title="RESOURCES">
-         <p>
-          <a
-            target="_blank"
-            href="https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"
-            >→ YouTube Playlist</a
-          >
-        </p>
-        <p>
-          <a
-            target="_blank"
-            href="https://drive.google.com/drive/folders/1Hxd5kI1gWZXB3dU15D3aQc7badd6mQHl?usp=sharing"
-            >→ Tutorial Files + Assets</a
-          >
-        </p>
-      </Collapsible>
+       
       <Collapsible title="SPIRAL BANANA">
         <iframe width="810" height="460" src="https://www.youtube.com/embed/093l7at3phA?si=cXa1TXao2kWWFYhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </Collapsible>
@@ -61,6 +46,22 @@ onMounted(() => {
       </Collapsible>
             <Collapsible title="FUNKY AUDIOSPECTRUM">
         <iframe width="810" height="460" src="https://www.youtube.com/embed/h-AJN-XxsGE?si=TfpGFDVJB7g5a8fK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Collapsible>
+       <Collapsible title="RESOURCES">
+         <p>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"
+            >→ YouTube Playlist</a
+          >
+        </p>
+        <p>
+          <a
+            target="_blank"
+            href="https://drive.google.com/drive/folders/1Hxd5kI1gWZXB3dU15D3aQc7badd6mQHl?usp=sharing"
+            >→ Tutorial Files + Assets</a
+          >
+        </p>
       </Collapsible>
     </section>
   </div>

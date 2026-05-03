@@ -87,15 +87,11 @@ body {
   z-index: 9;
   background-color: var(--background-color);
 }
-.projectNav select {
-  transform: translateY(-23px);
-  display: flex;
-  justify-content: center;
-}
 .projectNav.mobile {
   justify-content: center;
 }
 .projectNav .projectNavDropdown {
+  transform: translateY(-23px);
   width: min(100%, 220px);
   height: 42px;
   padding: 0 34px 0 10px;
@@ -166,7 +162,6 @@ body {
 @media (max-width: 506px) {
   .projectNav li {
     width: 100px;
-    font-size: 1px;
   }
 }
 .projectNav li:hover {
@@ -344,18 +339,18 @@ body {
   }
 }
 .aboutSite .aboutGeneral img {
-  max-width: 40%;
+  max-width: 250px;
   height: auto;
 }
 @media (max-width: 800px) {
   .aboutSite .aboutGeneral img {
-    max-width: 60%;
+    max-width: 200px;
     margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
   .aboutSite .aboutGeneral img {
-    max-width: 80%;
+    max-width: 200px;
     margin: 0 auto;
   }
 }
@@ -368,6 +363,11 @@ body {
   width: 200%;
   height: -moz-fit-content;
   height: fit-content;
+}
+@media (max-width: 800px) {
+  .aboutSite .aboutGeneral .aboutTextWrapper {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 800px) {
   .aboutSite .aboutGeneral .aboutTextWrapper {
@@ -445,11 +445,6 @@ body {
   text-decoration: none;
   color: var(--background-color);
   opacity: 60%;
-}
-@media (max-width: 800px) {
-  .aboutSite .aboutGeneral .aboutTextWrapper a {
-    margin: 20px auto;
-  }
 }
 .aboutSite .aboutGeneral .aboutTextWrapper a:hover {
   opacity: 100%;
@@ -559,43 +554,10 @@ body {
     font-size: 3.4rem;
   }
 }
-.headerContainer .herowrapper h5 {
-  text-align: center;
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.25 rem;
-  opacity: 100%;
-  padding-top: 10px;
-}
-@media (max-width: 600px) {
-  .headerContainer .herowrapper h5 {
-    font-size: 0.9rem;
-  }
-}
-.headerContainer .herowrapper h6 {
-  text-align: center;
-}
-@media (max-width: 600px) {
-  .headerContainer .herowrapper h6 {
-    font-size: 0.9rem;
-  }
-}
-.headerContainer .herowrapper h6 {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.5rem;
-  opacity: 10%;
-  padding-top: 20px;
-}
 
 .hero {
   line-height: 1;
   display: inline-block;
-  color: var(--hero-text);
   z-index: 2;
   letter-spacing: 10px;
   /* Bright things in dark environments usually cast that light, giving off a glow */
@@ -626,14 +588,6 @@ body {
   color: #1bc7fb;
 }
 
-.single-path {
-  clip-path: polygon(0% 12%, 53% 12%, 53% 26%, 25% 26%, 25% 86%, 31% 86%, 31% 0%, 53% 0%, 53% 84%, 92% 84%, 92% 82%, 70% 82%, 70% 29%, 78% 29%, 78% 65%, 69% 65%, 69% 66%, 77% 66%, 77% 45%, 85% 45%, 85% 26%, 97% 26%, 97% 28%, 84% 28%, 84% 34%, 54% 34%, 54% 89%, 30% 89%, 30% 58%, 83% 58%, 83% 5%, 68% 5%, 68% 36%, 62% 36%, 62% 1%, 12% 1%, 12% 34%, 60% 34%, 60% 57%, 98% 57%, 98% 83%, 1% 83%, 1% 53%, 91% 53%, 91% 84%, 8% 84%, 8% 83%, 4% 83%);
-}
-
-.paths {
-  animation: paths 5s step-end infinite;
-}
-
 @keyframes paths {
   0% {
     clip-path: polygon(0% 43%, 83% 43%, 83% 22%, 23% 22%, 23% 24%, 91% 24%, 91% 26%, 18% 26%, 18% 83%, 29% 83%, 29% 17%, 41% 17%, 41% 39%, 18% 39%, 18% 82%, 54% 82%, 54% 88%, 19% 88%, 19% 4%, 39% 4%, 39% 14%, 76% 14%, 76% 52%, 23% 52%, 23% 35%, 19% 35%, 19% 8%, 36% 8%, 36% 31%, 73% 31%, 73% 16%, 1% 16%, 1% 56%, 50% 56%, 50% 8%);
@@ -657,12 +611,6 @@ body {
     clip-path: none;
   }
 }
-.movement {
-  /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
-  position: relative;
-  animation: movement 8s step-end infinite;
-}
-
 @keyframes movement {
   0% {
     top: 0px;
@@ -685,10 +633,6 @@ body {
     left: 5px;
   }
 }
-.opacity {
-  animation: opacity 5s step-end infinite;
-}
-
 @keyframes opacity {
   0% {
     opacity: 0.1;
@@ -712,10 +656,6 @@ body {
     opacity: 0;
   }
 }
-.font {
-  animation: font 10s step-end infinite;
-}
-
 @keyframes font {
   0% {
     font-weight: 100;
@@ -856,7 +796,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     position: fixed;
-    align-items: center;
     top: 50px;
     width: 100%;
     height: 100vh;
@@ -897,6 +836,7 @@ nav ul li {
   nav ul li {
     font-size: 2rem;
     padding-top: 20px;
+    margin-right: 0px;
   }
 }
 nav ul .navLink {
@@ -931,6 +871,7 @@ nav ul .modeSwitch {
     height: 40px;
     margin-top: 40px;
     margin-bottom: 20px;
+    margin-right: 0px;
   }
 }
 nav ul .dark {
@@ -976,7 +917,7 @@ nav ul .light:hover {
 }
 .project .backOverview {
   position: fixed;
-  background-color: var(--card---card-background-color);
+  background-color: var(--card-background-color);
   z-index: 1000;
 }
 .project .backOverview .backLink {
@@ -1004,9 +945,11 @@ nav ul .light:hover {
 }
 .project .projectOverview .projectHeaderImage {
   width: 100%;
+  max-width: 1024px;
+  aspect-ratio: 10/3;
+  height: auto;
   background-size: cover;
   background-position: top;
-  height: 300px;
   position: relative;
 }
 .project .projectOverview .projectHeaderImage::before {
@@ -1020,9 +963,9 @@ nav ul .light:hover {
   pointer-events: none;
 }
 .project .projectOverview .textProjectContent {
-  padding: 15px;
   width: 82%;
   margin: 0 auto;
+  margin-top: 10px;
 }
 .project .projectOverview .textProjectContent h2 {
   font-family: "Anek Devanagari", sans-serif;
@@ -1031,19 +974,18 @@ nav ul .light:hover {
   font-variation-settings: "wdth" 125;
   font-size: 56px;
   line-height: 98%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 @media (max-width: 778px) {
   .project .projectOverview .textProjectContent h2 {
     text-align: left;
     font-size: 3rem;
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 35px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 506px) {
   .project .projectOverview .textProjectContent h2 {
     font-size: 2.25rem;
   }
@@ -1064,7 +1006,7 @@ nav ul .light:hover {
   .project .projectOverview .textProjectContent p {
     font-size: 1.1rem;
     text-align: left;
-    width: 92%;
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
@@ -1413,15 +1355,16 @@ pre {
 .aboutDetails .collapsibleWrapper .collapsibleContent iframe,
 .projectDetails .collapsibleWrapper .collapsibleContent iframe {
   align-self: center;
-  border-radius: 10px;
-  margin-top: 30px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  height: auto;
 }
 @media (max-width: 600px) {
   .aboutDetails .collapsibleWrapper .collapsibleContent iframe,
   .projectDetails .collapsibleWrapper .collapsibleContent iframe {
     font-size: 0.7rem;
-    width: 90%;
-    height: 200px;
   }
 }
 .aboutDetails .collapsibleWrapper .collapsibleContent video,

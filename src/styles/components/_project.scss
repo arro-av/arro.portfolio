@@ -4,7 +4,7 @@
   }
   .backOverview {
     position: fixed;
-    background-color: var(--card---card-background-color);
+    background-color: var(--card-background-color);
     z-index: 1000;
 
     .backLink {
@@ -35,9 +35,11 @@
 
     .projectHeaderImage {
       width: 100%;
+      max-width: 1024px;
+      aspect-ratio: 10 / 3;
+      height: auto;
       background-size: cover;
       background-position: top;
-      height: 300px;
       position: relative;
         
       &::before {
@@ -53,26 +55,25 @@
     }
 
     .textProjectContent {
-      padding: 15px;
       width: 82%;
-      margin: 0 auto;  
+      margin: 0 auto;
+      margin-top: 10px;  
 
       h2 {
         @include titles-font();
         font-size: 56px;
         line-height: 98%;
 
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
 
         @media (max-width: 778px) {
           text-align: left;
           font-size: 3rem;
-          width: 92%;
+          width: 100%;
           margin: 0 auto;
-          margin-top: 35px;
         }
-        @media (max-width: 440px) {
+        @media (max-width: 506px) {
           font-size: 2.25rem;
         }
       }
@@ -89,7 +90,7 @@
         @media (max-width: 778px) {
           font-size: 1.1rem;
           text-align: left;
-          width: 92%;
+          width: 100%;
           padding-left: 0;
           padding-right: 0;
 

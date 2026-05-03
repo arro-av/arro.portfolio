@@ -9,18 +9,12 @@
 
   background-color: var(--background-color);
 
-  select{
-    transform: translateY(-23px);
-    display: flex;
-    justify-content: center;
-    
-}
-
   &.mobile {
     justify-content: center;
   }
 
   .projectNavDropdown {
+    transform: translateY(-23px);
     width: min(100%, 220px);
     height: 42px;
     padding: 0 34px 0 10px;
@@ -93,7 +87,6 @@
 
        @media (max-width: 506px) {
       width: 100px;
-      font-size: 1px;;
     }
 
 

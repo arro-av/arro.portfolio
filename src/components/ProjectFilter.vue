@@ -1,8 +1,11 @@
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
+const filters = ["ALL PROJECTS", "AUDIO VISUAL", "DEVELOPMENT", "DESIGN"];
+
 const activeFilter = ref(localStorage.getItem("activeFilter") || "ALL PROJECTS");
+const isMobile = ref(false);
 
 const projects = ref([
   //___1___
@@ -118,20 +121,41 @@ const filteredProjects = computed(() => {
 });
 
 function updateActiveFilter(filter) {
-  if (activeFilter.value === filter) {
-    activeFilter.value = null;
-  } else {
-    activeFilter.value = filter;
-    localStorage.setItem("activeFilter", filter);
-  }
+  activeFilter.value = filter;
+  localStorage.setItem("activeFilter", filter);
 }
+
+function handleResize() {
+  isMobile.value = window.innerWidth <= 506;
+}
+
+onMounted(() => {
+  handleResize();
+  window.addEventListener("resize", handleResize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", handleResize);
+});
 </script>
 
 <template>
   <div class="projectsWrapper">
-    <div class="projectNav">
+    <div class="projectNav" :class="{ mobile: isMobile }">
+      <select
+        v-if="isMobile"
+        class="projectNavDropdown"
+        :value="activeFilter"
+        @change="updateActiveFilter($event.target.value)"
+      >
+        <option v-for="filter in filters" :key="filter" :value="filter">
+          {{ filter }}
+        </option>
+      </select>
+
       <li
-        v-for="filter in ['ALL PROJECTS','AUDIO VISUAL', 'DEVELOPMENT', 'DESIGN']"
+        v-else
+        v-for="filter in filters"
         :key="filter"
         :id="activeFilter === filter ? 'activeFilter' : ''"
         @click="updateActiveFilter(filter)"

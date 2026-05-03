@@ -29,24 +29,63 @@
     .collapspreview {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       border-bottom: 1px solid var(--text-color);
 
       margin-bottom: 15px;
       cursor: pointer;
 
-      img {
-        opacity: 100%;
-        filter: var(--svg-filter);
-        width: 25px;
+      .collapseToggle {
+        cursor: pointer;
+        appearance: none;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        position: relative;
+        width: 28px;
+        height: 28px;
         opacity: 70%;
-        padding-bottom: 10px;
+        flex-shrink: 0;
 
-        transition: transform 0.3s ease;
+        transition: opacity 0.2s ease;
 
         &:hover {
           opacity: 100%;
         }
+
+        &:focus-visible {
+          opacity: 100%;
+          outline: 2px solid var(--text-color);
+          outline-offset: 3px;
+        }
+
+        &.open {
+          opacity: 100%;
+        }
+      }
+
+      .collapseLine {
+        position: absolute;
+        top: 13px;
+        left: 3px;
+        width: 22px;
+        height: 2px;
+        border-radius: 999px;
+        background: var(--text-color);
+        transition: transform 0.28s ease, opacity 0.2s ease;
+      }
+
+      .vertical {
+        transform: rotate(90deg);
+      }
+
+      .collapseToggle.open .horizontal {
+        transform: rotate(45deg);
+      }
+
+      .collapseToggle.open .vertical {
+        transform: rotate(-45deg);
       }
 
       h4 {

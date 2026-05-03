@@ -16,11 +16,17 @@ const isVisible = ref(props.isVisible);
   <div class="collapsibleWrapper">
     <div class="collapspreview" @click="isVisible = !isVisible">
       <h4>{{ title }}</h4>
-      <img
-        src="../assets/images/plus-icon.svg"
-        alt="Icon to Open a collapse section"
-        :class="{ rotated: isVisible }"
-      />
+      <button
+        type="button"
+        class="collapseToggle"
+        :class="{ open: isVisible }"
+        :aria-expanded="isVisible"
+        aria-label="Toggle collapse section"
+        @click.stop="isVisible = !isVisible"
+      >
+        <span class="collapseLine horizontal"></span>
+        <span class="collapseLine vertical"></span>
+      </button>
     </div>
     <transition name="ease-in">
       <div v-if="isVisible" class="collapsibleContent">
@@ -31,11 +37,6 @@ const isVisible = ref(props.isVisible);
 </template>
 
 <style scoped>
-.rotated {
-  transform: rotate(45deg);
-  transition: transform 0.5s ease;
-}
-
 .ease-in-enter-active,
 .ease-in-leave-active {
   transition: opacity 0.2s ease-in;

@@ -1,11 +1,22 @@
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from "vue";
+import {
+  ref,
+  computed,
+  onMounted,
+  onBeforeUnmount,
+  watch,
+  nextTick,
+} from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
 
 const filters = ["ALL PROJECTS", "AUDIO VISUAL", "DEVELOPMENT", "DESIGN"];
 
 const activeFilter = ref(localStorage.getItem("activeFilter") || "ALL PROJECTS");
 const isMobile = ref(false);
+const projectListContainer = ref(null);
+const activeMobileProject = ref(null);
+
+let frameId = null;
 
 const projects = ref([
   //___1___
@@ -127,15 +138,85 @@ function updateActiveFilter(filter) {
 
 function handleResize() {
   isMobile.value = window.innerWidth <= 506;
+
+  if (!isMobile.value) {
+    activeMobileProject.value = null;
+  }
+}
+
+function updateCenteredProject() {
+  if (!isMobile.value || !projectListContainer.value) {
+    activeMobileProject.value = null;
+    return;
+  }
+
+  const cards = Array.from(
+    projectListContainer.value.querySelectorAll(".projectCardLink[data-project-id]")
+  );
+
+  if (!cards.length) {
+    activeMobileProject.value = null;
+    return;
+  }
+
+  const viewportCenter = window.innerHeight / 2;
+  const visibleCards = cards.filter((card) => {
+    const rect = card.getBoundingClientRect();
+    return rect.bottom > 0 && rect.top < window.innerHeight;
+  });
+
+  const cardsToCheck = visibleCards.length ? visibleCards : cards;
+  let closestCardId = null;
+  let closestDistance = Number.POSITIVE_INFINITY;
+
+  cardsToCheck.forEach((card) => {
+    const rect = card.getBoundingClientRect();
+    const cardCenter = rect.top + rect.height / 2;
+    const distanceToCenter = Math.abs(cardCenter - viewportCenter);
+
+    if (distanceToCenter < closestDistance) {
+      closestDistance = distanceToCenter;
+      closestCardId = card.dataset.projectId;
+    }
+  });
+
+  activeMobileProject.value = closestCardId;
+}
+
+function queueCenteredProjectUpdate() {
+  if (frameId) {
+    cancelAnimationFrame(frameId);
+  }
+
+  frameId = requestAnimationFrame(() => {
+    frameId = null;
+    updateCenteredProject();
+  });
 }
 
 onMounted(() => {
   handleResize();
   window.addEventListener("resize", handleResize);
+  window.addEventListener("scroll", queueCenteredProjectUpdate, {
+    passive: true,
+  });
+  nextTick(() => {
+    queueCenteredProjectUpdate();
+  });
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("resize", handleResize);
+  window.removeEventListener("scroll", queueCenteredProjectUpdate);
+
+  if (frameId) {
+    cancelAnimationFrame(frameId);
+  }
+});
+
+watch([filteredProjects, isMobile], async () => {
+  await nextTick();
+  queueCenteredProjectUpdate();
 });
 </script>
 
@@ -164,11 +245,16 @@ onBeforeUnmount(() => {
       </li>
     </div>
 
-    <div class="projectListContainer">
+    <div class="projectListContainer" ref="projectListContainer">
       <TransitionGroup name="project" tag="div" class="project-list">
         <ProjectCard
           v-for="project in filteredProjects"
           :key="project.title"
+          :projectId="project.currentProjectView || project.title"
+          :isActive="
+            isMobile &&
+            activeMobileProject === (project.currentProjectView || project.title)
+          "
           :projectTitle="project.title"
           :projectInfo="project.text"
           :currentProjectView="project.currentProjectView"

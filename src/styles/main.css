@@ -221,7 +221,6 @@ body {
 }
 @media (max-width: 370px) {
   .projectListContainer .project-list {
-    width: 280px;
     max-height: -moz-fit-content;
     max-height: fit-content;
     display: flex;
@@ -240,7 +239,7 @@ body {
   padding: 8px;
   background-color: var(--card-background-color);
 }
-.projectListContainer .projectContainer:hover {
+.projectListContainer .projectContainer:hover, .projectListContainer .projectContainer.isActive {
   transform: scale(1.02);
   opacity: 100%;
   filter: grayscale(0%);
@@ -318,8 +317,6 @@ body {
   .projectListContainer .projectContainer {
     width: 100%;
     max-width: 380px;
-    height: auto;
-    min-height: 320px;
   }
 }
 

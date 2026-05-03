@@ -145,7 +145,6 @@
     }
 
           @media (max-width: 370px) {
-      width: 280px;
       max-height: fit-content;
       display: flex;
       flex-direction: column;
@@ -166,7 +165,8 @@
     padding: 8px;
     background-color: var(--card-background-color);
 
-    &:hover {
+    &:hover,
+    &.isActive {
       transform: scale(1.02);
       opacity: 100%;
       filter: grayscale(0%);
@@ -250,8 +250,6 @@
     @media (max-width: 900px) {
       width: 100%;
       max-width: 380px;
-      height: auto;
-      min-height: 320px;
     }
   }
 }

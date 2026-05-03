@@ -7,6 +7,8 @@ import webIcon from "../assets/images/Web.svg";
 const router = useRouter();
 
 defineProps({
+  projectId: String,
+  isActive: Boolean,
   imagePath: String,
   projectTitle: String,
   projectInfo: String,
@@ -54,6 +56,7 @@ function openProject(currentProjectView) {
   <TransitionGroup name="project" tag="div" class="project-list">
       <div
       class="projectCardLink"
+      :data-project-id="projectId"
       role="link"
       tabindex="0"
       @click="openProject(currentProjectView)"
@@ -62,6 +65,7 @@ function openProject(currentProjectView) {
     >
       <div
       class="projectContainer"
+      :class="{ isActive }"
     >
         <div class="projectImage" :style="{ backgroundImage: `url(${imagePath})` }">
           <div class="externalLink">

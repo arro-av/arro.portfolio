@@ -21,11 +21,15 @@ const canDownload = computed(() => Boolean(downloadUrl.value));
 let originalAnimation = null;
 let cleanAnimation = null;
 let lottieLoadPromise = null;
+let originalPreviewUrl = "";
+let cleanPreviewUrl = "";
 
 function loadLottie() {
-  if (window.lottie) {
+  const bodymovin = window.bodymovin || window.lottie;
+
+  if (bodymovin) {
     lottieReady.value = true;
-    return Promise.resolve(window.lottie);
+    return Promise.resolve(bodymovin);
   }
 
   if (lottieLoadPromise) {
@@ -38,8 +42,15 @@ function loadLottie() {
       "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js";
     script.async = true;
     script.onload = () => {
+      const loadedBodymovin = window.bodymovin || window.lottie;
+
+      if (!loadedBodymovin) {
+        reject(new Error("Could not load Lottie preview"));
+        return;
+      }
+
       lottieReady.value = true;
-      resolve(window.lottie);
+      resolve(loadedBodymovin);
     };
     script.onerror = () => reject(new Error("Could not load Lottie preview"));
     document.head.appendChild(script);
@@ -78,7 +89,8 @@ async function handleFile(file) {
 
   try {
     const lottie = await loadLottie();
-    const animation = JSON.parse(await file.text());
+    const fileText = await file.text();
+    const animation = JSON.parse(fileText);
 
     if (!animation || !Array.isArray(animation.layers)) {
       throw new Error("Invalid Lottie JSON");
@@ -95,8 +107,17 @@ async function handleFile(file) {
     );
     downloadName.value = outputName;
 
-    renderPreview(lottie, originalPreview.value, animation, "original");
-    renderPreview(lottie, cleanPreview.value, cleaned, "clean");
+    originalPreviewUrl = replaceObjectUrl(
+      originalPreviewUrl,
+      new Blob([fileText], { type: "application/json" })
+    );
+    cleanPreviewUrl = replaceObjectUrl(
+      cleanPreviewUrl,
+      new Blob([output], { type: "application/json" })
+    );
+
+    renderPreview(lottie, originalPreview.value, originalPreviewUrl, "original");
+    renderPreview(lottie, cleanPreview.value, cleanPreviewUrl, "clean");
 
     originalMeta.value = `${animation.layers.length} layers`;
     cleanMeta.value = `${cleaned.layers.length} layers`;
@@ -109,7 +130,7 @@ async function handleFile(file) {
   }
 }
 
-function renderPreview(lottie, container, animationData, type) {
+function renderPreview(lottie, container, path, type) {
   if (!container) return;
 
   if (type === "original" && originalAnimation) originalAnimation.destroy();
@@ -122,7 +143,7 @@ function renderPreview(lottie, container, animationData, type) {
     renderer: "svg",
     loop: true,
     autoplay: true,
-    animationData,
+    path,
   });
 
   if (type === "original") originalAnimation = instance;
@@ -137,10 +158,22 @@ function clearPreview() {
   cleanAnimation = null;
   originalPreview.value?.replaceChildren();
   cleanPreview.value?.replaceChildren();
+  originalPreviewUrl = revokeObjectUrl(originalPreviewUrl);
+  cleanPreviewUrl = revokeObjectUrl(cleanPreviewUrl);
   originalMeta.value = "-";
   cleanMeta.value = "-";
   downloadName.value = "";
   revokeDownloadUrl();
+}
+
+function replaceObjectUrl(currentUrl, blob) {
+  revokeObjectUrl(currentUrl);
+  return URL.createObjectURL(blob);
+}
+
+function revokeObjectUrl(url) {
+  if (url) URL.revokeObjectURL(url);
+  return "";
 }
 
 function revokeDownloadUrl() {
@@ -275,7 +308,9 @@ onBeforeUnmount(() => {
                 <span>Original</span>
                 <span>{{ originalMeta }}</span>
               </div>
-              <div ref="originalPreview" class="stage"></div>
+              <div class="stageShell">
+                <div ref="originalPreview" class="stage"></div>
+              </div>
             </article>
 
             <article class="previewPanel">
@@ -283,7 +318,9 @@ onBeforeUnmount(() => {
                 <span>Removed</span>
                 <span>{{ cleanMeta }}</span>
               </div>
-              <div ref="cleanPreview" class="stage"></div>
+              <div class="stageShell">
+                <div ref="cleanPreview" class="stage"></div>
+              </div>
             </article>
           </section>
 
@@ -419,16 +456,26 @@ onBeforeUnmount(() => {
   opacity: 0.6;
 }
 
-.stage {
+.stageShell {
   min-height: 300px;
   display: grid;
   place-items: center;
   padding: 22px;
 }
 
+.stage {
+  width: min(100%, 500px);
+  aspect-ratio: 1 / 1;
+}
+
+.stage :deep(*) {
+  transition: none !important;
+}
+
 .stage :deep(svg) {
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .actions {

@@ -121,6 +121,14 @@ const projects = ref([
     tag: ["SCHOOL PROJECTS", "ASSIGNMENTS"],
   },
   */
+   {
+    categories: ["DEVELOPMENT"],
+    title: "LOTTIEHACK",
+    text: "A browser tool for cleaning Lottie JSON exports and previewing the result.",
+    currentProjectView: "/FlotteLotte",
+    imagePath: "/card_thumbails/LottieHack.png",
+    tag: ["APPLICATION", "VUE.JS", "LOTTIE"],
+  },
 ]);
 
 const filteredProjects = computed(() => {

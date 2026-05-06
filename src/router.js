@@ -6,6 +6,7 @@ import LinkTree from "./views/LinkTree.vue";
 //DEVELOPMENT PROJECTS
 import progress from "./views/Projects/progress.vue";
 import arro from "./views/Projects/arro.vue";
+import FlotteLotte from "./views/Projects/FlotteLotte.vue";
 
 //DESIGN PROJECTS
 import eioeiclub from "./views/Projects/808club.vue";
@@ -46,6 +47,11 @@ const routes = [
     path: "/progress",
     name: "progress",
     component: progress,
+  },
+  {
+    path: "/FLotteLotte",
+    name: "FlotteLotte",
+    component: FlotteLotte,
   },
   //DESIGN
   {

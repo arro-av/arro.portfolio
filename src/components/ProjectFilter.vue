@@ -124,7 +124,7 @@ const projects = ref([
    {
     categories: ["DEVELOPMENT"],
     title: "LOTTIEHACK",
-    text: "A browser tool for cleaning Lottie JSON exports and previewing the result.",
+    text: "A browser tool for cleaning Lottie JSON exports from unwanted elements.",
     currentProjectView: "/FlotteLotte",
     imagePath: "/card_thumbails/LottieHack.png",
     tag: ["APPLICATION", "VUE.JS", "LOTTIE"],

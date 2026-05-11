@@ -16,9 +16,7 @@ import Image from "../../components/Image.vue";
         imagePath="/card_thumbails/808_Spotlight.jpg"
       />
 
-      <div class="mainProjectContent">
-
-      </div>
+      <div class="mainProjectContent"></div>
     </section>
 
     <section class="projectDetails">
@@ -26,33 +24,34 @@ import Image from "../../components/Image.vue";
         <p>Intro Visual | 808</p>
         <Image src="/project_images/o_events_img5.jpg" alt="Spotlight" />
 
-         <p>Visual | Luzius P</p>
+        <p>Visual | Luzius P</p>
         <Image src="/project_images/o_events_img1.jpg" alt="Spotlight" />
-       
-      <p>Visual | Blue</p>
+
+        <p>Visual | Blue</p>
         <Image src="/project_images/o_events_img2.jpg" alt="Spotlight" />
-      
       </Collapsible>
 
-        <Collapsible title="PERFORMANCE SETUP">
-                  <p>
+      <Collapsible title="PERFORMANCE SETUP">
+        <p>
           Here’s the basic setup – each visual is housed in its own Base
           component. I MIDI-mapped each value, but you can also just use the
           sliders in the 'Constant CHOP'.
-          <br>
-          <a target="_blank" href="https://drive.google.com/drive/folders/1q3PbSq1VdNGDDjJ9tW2eAR2bjTQ2lTS3?usp=sharing"
-            >→ TOE File</a>
+          <br />
+          <a
+            target="_blank"
+            href="https://drive.google.com/drive/folders/1q3PbSq1VdNGDDjJ9tW2eAR2bjTQ2lTS3?usp=sharing"
+            >→ TOE File</a
+          >
         </p>
-           <Image src="/project_images/v_spotlight_img2.jpg" alt="VJ_System" />
-        
-
-        </Collapsible>
+        <Image src="/project_images/v_spotlight_img2.jpg" alt="VJ_System" />
+      </Collapsible>
 
       <Collapsible title="RESOURCES">
         <p>
           <a target="_blank" href="https://www.youtube.com/watch?v=R6qUNRbgmk4"
-            >→ YouTube Video</a>
-            <br>
+            >→ YouTube Video</a
+          >
+          <br />
           <a target="_blank" href="https://808club.x-net.dev/808-spotlight/"
             >→ Website Entry</a
           >

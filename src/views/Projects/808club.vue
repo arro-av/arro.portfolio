@@ -21,7 +21,7 @@ import Image from "../../components/Image.vue";
       <Collapsible title="TECH">
         <p>
           → Wordpress <br />
-          → Elementor 
+          → Elementor
         </p>
       </Collapsible>
 

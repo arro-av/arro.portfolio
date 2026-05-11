@@ -103,20 +103,25 @@ async function handleFile(file) {
 
     revokeDownloadUrl();
     downloadUrl.value = URL.createObjectURL(
-      new Blob([output], { type: "application/json" })
+      new Blob([output], { type: "application/json" }),
     );
     downloadName.value = outputName;
 
     originalPreviewUrl = replaceObjectUrl(
       originalPreviewUrl,
-      new Blob([fileText], { type: "application/json" })
+      new Blob([fileText], { type: "application/json" }),
     );
     cleanPreviewUrl = replaceObjectUrl(
       cleanPreviewUrl,
-      new Blob([output], { type: "application/json" })
+      new Blob([output], { type: "application/json" }),
     );
 
-    renderPreview(lottie, originalPreview.value, originalPreviewUrl, "original");
+    renderPreview(
+      lottie,
+      originalPreview.value,
+      originalPreviewUrl,
+      "original",
+    );
     renderPreview(lottie, cleanPreview.value, cleanPreviewUrl, "clean");
 
     originalMeta.value = `${animation.layers.length} layers`;
@@ -189,7 +194,7 @@ function removeLottielabWatermarks(animation) {
   visitLayerContainers(animation, (container) => {
     const before = container.layers.length;
     container.layers = container.layers.filter(
-      (layer) => !isLottielabWatermarkLayer(layer, animation)
+      (layer) => !isLottielabWatermarkLayer(layer, animation),
     );
     removed += before - container.layers.length;
   });
@@ -237,7 +242,9 @@ function isLottielabWatermarkLayer(layer, animation) {
     if (sx > 12 && sx < 45 && sy > 12 && sy < 45) score += 1.5;
   }
 
-  return score >= 6 || (score >= 5 && layer.ty === 4 && Array.isArray(layer.shapes));
+  return (
+    score >= 6 || (score >= 5 && layer.ty === 4 && Array.isArray(layer.shapes))
+  );
 }
 
 function readStaticVector(value) {
@@ -325,7 +332,9 @@ onBeforeUnmount(() => {
           </section>
 
           <div class="actions">
-            <span v-if="!lottieReady" class="helperText">Preview loads on first file.</span>
+            <span v-if="!lottieReady" class="helperText"
+              >Preview loads on first file.</span
+            >
             <a
               class="downloadButton"
               :class="{ disabled: !canDownload }"
@@ -392,7 +401,9 @@ onBeforeUnmount(() => {
   display: grid;
   place-items: center;
   overflow: hidden;
-  transition: border-color 0.16s ease, transform 0.16s ease,
+  transition:
+    border-color 0.16s ease,
+    transform 0.16s ease,
     background-color 0.16s ease;
 }
 
@@ -436,7 +447,11 @@ onBeforeUnmount(() => {
     linear-gradient(45deg, transparent 75%, rgba(127, 127, 127, 0.08) 75%),
     linear-gradient(-45deg, transparent 75%, rgba(127, 127, 127, 0.08) 75%),
     var(--background-color);
-  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+  background-position:
+    0 0,
+    0 10px,
+    10px -10px,
+    -10px 0;
   background-size: 20px 20px;
 }
 
@@ -445,7 +460,8 @@ onBeforeUnmount(() => {
   justify-content: space-between;
   gap: 12px;
   padding: 14px 16px;
-  border-bottom: 1px solid color-mix(in srgb, var(--text-color), transparent 72%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--text-color), transparent 72%);
   background: var(--background-color);
   color: var(--text-color);
   font-weight: 700;

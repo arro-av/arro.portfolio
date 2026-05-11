@@ -15,50 +15,43 @@ import Image from "../../components/Image.vue";
         text="Various flyer designs I made primarily for our club 808club. These here are exclusively pieces I designed for real events. I am looking forward to be designing such things for other projects in the future as well."
         imagePath="/card_thumbails/Fyler_Designs.jpg"
       />
-
     </section>
 
     <section class="projectDetails">
       <Collapsible title="HOUSE OF ARTS">
+        <Image
+          src="/project_images/d_808_img2.jpg"
+          alt="Flyer"
+          style="max-width: 400px"
+        />
+        <p>House of Arts #1- Affinity & Procreate</p>
 
-          <Image src="/project_images/d_808_img2.jpg" alt="Flyer" style="max-width: 400px;" />
-          <p>
-          House of Arts #1- Affinity & Procreate
-        </p>
-
-        
-
-
-          <Image src="/project_images/d_808_img5.jpg" alt="Flyer" style="max-width: 400px;" />
-                <p>
-          House of Arts #2- Photoshop
-        </p>
-
-
-        
+        <Image
+          src="/project_images/d_808_img5.jpg"
+          alt="Flyer"
+          style="max-width: 400px"
+        />
+        <p>House of Arts #2- Photoshop</p>
       </Collapsible>
 
-            <Collapsible title="GAME OF SKATE">
+      <Collapsible title="GAME OF SKATE">
+        <Image
+          src="/project_images/d_808_img3.jpg"
+          alt="Flyer"
+          style="max-width: 400px"
+        />
+        <p>Game of Skate #1- Affinity</p>
 
-          <Image src="/project_images/d_808_img3.jpg" alt="Flyer" style="max-width: 400px;" />
-          <p>
-          Game of Skate #1- Affinity
-        </p>
-
-
-
-          <Image src="/project_images/d_808_img4.jpg" alt="Flyer" style="max-width: 400px;" />
-                 <p>
-          Game of Skate #2- Affinity
-        </p>
-
-
-        
+        <Image
+          src="/project_images/d_808_img4.jpg"
+          alt="Flyer"
+          style="max-width: 400px"
+        />
+        <p>Game of Skate #2- Affinity</p>
       </Collapsible>
 
       <Collapsible title="RESOURCES">
         <p>
-
           <a
             href="https://808club.at/events/"
             target="_blank"

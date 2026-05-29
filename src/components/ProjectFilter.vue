@@ -11,7 +11,9 @@ import ProjectCard from "../components/ProjectCard.vue";
 
 const filters = ["ALL PROJECTS", "AUDIO VISUAL", "DEVELOPMENT", "DESIGN"];
 
-const activeFilter = ref(localStorage.getItem("activeFilter") || "ALL PROJECTS");
+const activeFilter = ref(
+  localStorage.getItem("activeFilter") || "ALL PROJECTS",
+);
 const isMobile = ref(false);
 const projectListContainer = ref(null);
 const activeMobileProject = ref(null);
@@ -29,28 +31,31 @@ const projects = ref([
     link: ["https://github.com/arro-av/progress_app"],
     tag: ["APPLICATION", "ELECTRON", "VUE.JS"],
   },
-//___2___
+  //___2___
   {
     categories: ["AUDIO VISUAL"],
     title: "SPOTLIGHT",
     text: "Visuals done for a concert in the Ars ELectronica Deep Space 8K.",
     currentProjectView: "/808Spotlight",
     imagePath: "/card_thumbails/808_Spotlight.jpg",
-    link: ["https://www.youtube.com/watch?v=R6qUNRbgmk4", "https://808club.x-net.dev/808-spotlight/"],
+    link: [
+      "https://www.youtube.com/watch?v=R6qUNRbgmk4",
+      "https://808club.x-net.dev/808-spotlight/",
+    ],
     tag: ["PERFORMANCE", "AEC", "DEEPSPACE"],
   },
 
   //___3___
-    {
+  {
     categories: ["DESIGN"],
     title: "SCREENPRINTS",
     text: "Shirt Designs for my little at home screenprinting workshop.",
     currentProjectView: "/screenprints",
     imagePath: "/card_thumbails/Screenprints.jpg",
-  tag: ["SCREENPRINTS", "INKSCAPE"],
+    tag: ["SCREENPRINTS", "INKSCAPE"],
   },
-//___4___
-/* TO BE ADDED LATER - HAVE NOT PUSHED ALL ATTRACTORS TO GITHUB
+  //___4___
+  /* TO BE ADDED LATER - HAVE NOT PUSHED ALL ATTRACTORS TO GITHUB
   {
     categories: ["AUDIO VISUAL", "DEVELOPMENT"],
     title: "STRANGE ATTRACTORS",
@@ -61,14 +66,17 @@ const projects = ref([
     tag: ["GLSL", "TOUCHDESIGNER", "SIMULATION"],
   },
   */
-//___5___
+  //___5___
   {
     categories: ["AUDIO VISUAL"],
     title: "CODING SOUND",
     text: "A project series on coding techno music using the live coding tool SonicPi.",
     currentProjectView: "/coding_techno",
     imagePath: "/card_thumbails/Coding_Techno.jpg",
-    link: ["https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA", "https://www.youtube.com/watch?v=s2NJrpKzkfQ&list=PLFLuAZh6tS3LepaSGIK9-x468r-3yD4MP"],
+    link: [
+      "https://www.youtube.com/watch?v=s22yDfzhWoU&list=PLFLuAZh6tS3IfAgWplNl72bJkq3jWkxeA",
+      "https://www.youtube.com/watch?v=s2NJrpKzkfQ&list=PLFLuAZh6tS3LepaSGIK9-x468r-3yD4MP",
+    ],
     tag: ["LIVE CODING", "SONIC PI", "TECHNO"],
   },
   //___6___
@@ -78,7 +86,9 @@ const projects = ref([
     text: "A collection of TouchDesigner Tutorials done for my YouTube Channel.",
     currentProjectView: "/TD_tutorials",
     imagePath: "/card_thumbails/TD_Tuts.jpg",
-    link: ["https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE"],
+    link: [
+      "https://www.youtube.com/watch?v=093l7at3phA&list=PLFLuAZh6tS3Lu9dsZ10a__zXhkrIHYXhE",
+    ],
     tag: ["TUTORIALS", "TOUCHDESIGNER"],
   },
   //___7___
@@ -92,7 +102,7 @@ const projects = ref([
     tag: ["WEBSITE", "WORDPRESS", "ELEMENTOR"],
   },
   //___8___
-    {
+  {
     categories: ["DEVELOPMENT"],
     title: "ARRO PORTFOLIO",
     text: "My personal portfolio website, which is constant work in progress.",
@@ -102,7 +112,7 @@ const projects = ref([
     tag: ["WEBSITE", "VUE.JS", "THREE.JS"],
   },
   //___9___
-    {
+  {
     categories: ["DESIGN"],
     title: "FLYER DESIGNS",
     text: "Designs made to promote various local art and music events.",
@@ -121,13 +131,13 @@ const projects = ref([
     tag: ["SCHOOL PROJECTS", "ASSIGNMENTS"],
   },
   */
-   {
+  {
     categories: ["DEVELOPMENT"],
     title: "LOTTIEHACK",
-    text: "A browser tool for cleaning Lottie JSON exports from unwanted elements.",
+    text: "A browser tool for cleaning Lottie JSON exports from unwanted elements. ;)",
     currentProjectView: "/FlotteLotte",
-    imagePath: "/card_thumbails/LottieHack.png",
-    tag: ["APPLICATION", "VUE.JS", "LOTTIE"],
+    imagePath: "/card_thumbails/Lottie_Hack.jpg",
+    tag: ["TOOL", "LOTTIE"],
   },
 ]);
 
@@ -136,7 +146,7 @@ const filteredProjects = computed(() => {
     return projects.value;
   }
   return projects.value.filter((project) =>
-    project.categories.includes(activeFilter.value)
+    project.categories.includes(activeFilter.value),
   );
 });
 
@@ -160,7 +170,9 @@ function updateCenteredProject() {
   }
 
   const cards = Array.from(
-    projectListContainer.value.querySelectorAll(".projectCardLink[data-project-id]")
+    projectListContainer.value.querySelectorAll(
+      ".projectCardLink[data-project-id]",
+    ),
   );
 
   if (!cards.length) {
@@ -262,7 +274,8 @@ watch([filteredProjects, isMobile], async () => {
           :projectId="project.currentProjectView || project.title"
           :isActive="
             isMobile &&
-            activeMobileProject === (project.currentProjectView || project.title)
+            activeMobileProject ===
+              (project.currentProjectView || project.title)
           "
           :projectTitle="project.title"
           :projectInfo="project.text"

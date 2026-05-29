@@ -275,8 +275,8 @@ onBeforeUnmount(() => {
     <section class="projectOverview">
       <Overview
         title="Watermark Remover"
-        text="Drop your Lottielab exports to remove the waterma.... wait thats illegal!? 
-        Anyways, fuck you Adobe → Have fun animating ツ"
+        text="Drop your Lottielab exports to remove wate... unwanted content.
+        Anyways, only use if you are a broke student struggling to afford basic needs ツ"
         imagePath="/card_thumbails/Lottie_Hack.jpg"
       />
     </section>

@@ -8,6 +8,7 @@ import {
   nextTick,
 } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
+import dinoRunnerThumbnail from "../assets/dino_runner/vectors/Dino.svg?url";
 
 const filters = ["ALL PROJECTS", "AUDIO VISUAL", "DEVELOPMENT", "DESIGN"];
 
@@ -138,6 +139,14 @@ const projects = ref([
     currentProjectView: "/FlotteLotte",
     imagePath: "/card_thumbails/Lottie_Hack.jpg",
     tag: ["TOOL", "LOTTIE"],
+  },
+  {
+    categories: ["DEVELOPMENT"],
+    title: "DINO RUNNER",
+    text: "A small playable runner built with one HTML file and Lottie animations.",
+    currentProjectView: "/dino_runner",
+    imagePath: "/card_thumbails/Dino_Runner.jpg",
+    tag: ["GAME", "LOTTIE", "JS"],
   },
 ]);
 

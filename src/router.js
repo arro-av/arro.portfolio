@@ -7,6 +7,7 @@ import LinkTree from "./views/LinkTree.vue";
 import progress from "./views/Projects/progress.vue";
 import arro from "./views/Projects/arro.vue";
 import FlotteLotte from "./views/Projects/FlotteLotte.vue";
+import dinoRunner from "./views/Projects/dino_runner.vue";
 
 //DESIGN PROJECTS
 import eioeiclub from "./views/Projects/808club.vue";
@@ -52,6 +53,11 @@ const routes = [
     path: "/FLotteLotte",
     name: "FlotteLotte",
     component: FlotteLotte,
+  },
+  {
+    path: "/dino_runner",
+    name: "dino_runner",
+    component: dinoRunner,
   },
   //DESIGN
   {

@@ -53,8 +53,8 @@ const gameSrcDoc = Object.entries(gameAssetUrls).reduce(
     <section class="projectOverview">
       <Overview
         title="Dino Lottie Runner"
-        text="A tiny Chrome-Dino-inspired runner built as a one-file HTML, CSS and JavaScript experiment, with Lottie animations driving the character, UI and collectibles."
-        :imagePath="heroImage"
+        text="A chrome inspired dino runner but built with Lottie animations! This project was part of the Applied Motion Design class at FH Hagenberg."
+        imagePath="/card_thumbails/Dino_Runner.jpg"
       />
     </section>
 
@@ -67,24 +67,20 @@ const gameSrcDoc = Object.entries(gameAssetUrls).reduce(
             :srcdoc="gameSrcDoc"
           ></iframe>
         </div>
-        <p class="gameHint">
-          Click or tap inside the game to jump. Keyboard controls work once the
-          game frame is focused: Space / Arrow Up to jump, Enter / Space to
-          start or confirm.
-        </p>
+        <p class="gameHint">SPACEBAR → JUMP</p>
       </Collapsible>
 
       <Collapsible title="ABOUT">
         <p>
-          This project is a simplified Dino runner clone using Lottie SVG
-          animations as the visual system. The character, start button,
-          collectibles, cactus collision and highscore screen are animated
-          Lottie assets, while the hills and ground are static SVG scenery moved
-          through JavaScript.
+          This project was developed for a university class at FH Hagenberg
+          called Applied Motion Graphics. Lottie was the core technology in the
+          course, which is why I chose it as the visual foundation here, even
+          though Lottie was not designed with games in mind.
         </p>
+
         <p>
-          The game has three clear states: menu, active run and highscore. It
-          uses requestAnimationFrame for the loop, DOM bounding boxes for
+          The game still has three clear states - menu, active run and highscore
+          - and uses requestAnimationFrame for the loop, DOM bounding boxes for
           collision checks, and localStorage to keep the best score between page
           refreshes.
         </p>
@@ -98,7 +94,6 @@ const gameSrcDoc = Object.entries(gameAssetUrls).reduce(
           -> requestAnimationFrame <br />
           -> DOM collision detection <br />
           -> localStorage <br />
-          -> Vue iframe embed
         </p>
       </Collapsible>
     </section>

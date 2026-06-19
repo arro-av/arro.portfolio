@@ -288,6 +288,7 @@ body {
   transition: opacity 0.15s ease;
   background-color: var(--icon-background-color);
   padding: 5px;
+  margin-right: 4px;
 }
 .projectListContainer .projectContainer .projectTags {
   display: flex;

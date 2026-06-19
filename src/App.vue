@@ -1,6 +1,11 @@
 <script setup>
 import MainNavigation from "./components/Navbar.vue";
 import FooterSection from "./components/Footer.vue";
+import { useTheme } from "./composables/useTheme";
+
+const { initTheme } = useTheme();
+
+initTheme();
 </script>
 
 <template>

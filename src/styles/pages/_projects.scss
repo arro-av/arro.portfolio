@@ -69,26 +69,24 @@
     font-size: 18px;
     font-weight: 400;
 
-    
     @media (max-width: 1000px) {
       width: 200px;
-      font-size: 22px;;
+      font-size: 22px;
     }
 
     @media (max-width: 800px) {
       width: 150px;
-      font-size: 18px;;
+      font-size: 18px;
     }
 
-       @media (max-width: 600px) {
+    @media (max-width: 600px) {
       width: 120px;
-      font-size: 15px;;
+      font-size: 15px;
     }
 
-       @media (max-width: 506px) {
+    @media (max-width: 506px) {
       width: 100px;
     }
-
 
     &:hover {
       background-color: var(--text-color);
@@ -110,9 +108,9 @@
   display: flex;
   justify-content: center;
 
-    @media (max-width: 1024px) {
-      width: 100%;
-    }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 
   .projectCardLink {
     cursor: pointer;
@@ -127,7 +125,7 @@
 
     transition: opacity 0.2s ease;
 
-     @media (max-width: 1000px) {
+    @media (max-width: 1000px) {
       grid-template-columns: repeat(2, 300px);
       gap: 60px;
     }
@@ -137,14 +135,14 @@
       flex-direction: column;
     }
 
-      @media (max-width: 506px) {
+    @media (max-width: 506px) {
       width: 90%;
       display: flex;
       flex-direction: column;
       margin: 0 auto;
     }
 
-          @media (max-width: 370px) {
+    @media (max-width: 370px) {
       max-height: fit-content;
       display: flex;
       flex-direction: column;
@@ -172,7 +170,7 @@
       filter: grayscale(0%);
     }
 
-    h2{
+    h2 {
       font-family: "Space Mono", monospace;
       font-size: 18px;
       font-weight: 800;
@@ -183,7 +181,7 @@
       margin-left: 8px;
     }
 
-    p{
+    p {
       font-size: 14px;
       opacity: 60%;
       color: var(--text-color);
@@ -210,30 +208,31 @@
         display: flex;
         justify-content: center;
 
-        .externalLinkIcon{
+        .externalLinkIcon {
           width: 28px;
           height: 28px;
           filter: var(--svg-filter);
           transition: opacity 0.15s ease;
           background-color: var(--icon-background-color);
           padding: 5px;
+          margin-right: 4px;
         }
       }
     }
 
-    .projectTags{
+    .projectTags {
       display: flex;
       gap: 5px;
       margin-top: 18px;
 
-      p{
+      p {
         font-family: "space mono", monospace;
         font-size: 11px;
         color: var(--text-color);
         opacity: 50%;
         width: fit-content;
         border: 1px solid var(--text-color);
-         padding: 5px 10px 5px 10px;
+        padding: 5px 10px 5px 10px;
       }
 
       p:first-child {
@@ -245,7 +244,6 @@
       flex-direction: column;
       height: 100%;
     }
-
 
     @media (max-width: 900px) {
       width: 100%;

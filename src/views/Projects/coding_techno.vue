@@ -36,24 +36,6 @@ import Overview from "../../components/ProjectOverview.vue";
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <iframe
-          width="810"
-          height="460"
-          src="https://www.youtube.com/embed/s2NJrpKzkfQ?si=d48rpA60YI1kL5PM"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
       </Collapsible>
 
       <Collapsible title="CODING TECHNO">

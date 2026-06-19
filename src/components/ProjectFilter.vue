@@ -134,19 +134,19 @@ const projects = ref([
   */
   {
     categories: ["DEVELOPMENT"],
+    title: "DINO RUNNER",
+    text: "A small playable runner built with one HTML file and Lottie animations.",
+    currentProjectView: "/dino_runner",
+    imagePath: "/card_thumbails/Dino_Runner.jpg",
+    tag: ["GAME", "LOTTIE", "ANIMATION"],
+  },
+  {
+    categories: ["DEVELOPMENT"],
     title: "LOTTIEHACK",
     text: "A browser tool for cleaning Lottie JSON exports from unwanted elements. ;)",
     currentProjectView: "/FlotteLotte",
     imagePath: "/card_thumbails/Lottie_Hack.jpg",
     tag: ["TOOL", "LOTTIE"],
-  },
-  {
-    categories: ["DEVELOPMENT"],
-    title: "DINO RUNNER",
-    text: "A small playable runner built with one HTML file and Lottie animations.",
-    currentProjectView: "/dino_runner",
-    imagePath: "/card_thumbails/Dino_Runner.jpg",
-    tag: ["GAME", "LOTTIE", "JS"],
   },
 ]);
 

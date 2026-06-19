@@ -1,4 +1,6 @@
 <script setup>
+import { useTheme } from "../composables/useTheme";
+
 const showNyanButton = () => {
   const nyanButton = document.getElementById("nyan");
 
@@ -8,30 +10,15 @@ const showNyanButton = () => {
   nyanButton.style.pointerEvents = "all";
 };
 
-import { ref, onMounted } from "vue";
-
-const htmlElement = document.documentElement;
+const { setTheme } = useTheme();
 
 const applyLightmode = () => {
-  htmlElement.classList.add("lightmode");
-  htmlElement.classList.remove("darkmode");
-  localStorage.setItem("theme", "light");
+  setTheme("light");
 };
 
 const applyDarkmode = () => {
-  htmlElement.classList.add("darkmode");
-  htmlElement.classList.remove("lightmode");
-  localStorage.setItem("theme", "dark");
+  setTheme("dark");
 };
-
-onMounted(() => {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "light") {
-    document.documentElement.classList.add("lightmode");
-  } else {
-    document.documentElement.classList.add("darkmode");
-  }
-});
 </script>
 
 <template>

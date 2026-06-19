@@ -1,6 +1,6 @@
 .aboutDetails,
 .projectDetails {
-  width: 80%;
+  width: 82%;
   margin: 0 auto;
 
   @media (max-width: 600px) {
@@ -73,7 +73,9 @@
         height: 2px;
         border-radius: 999px;
         background: var(--text-color);
-        transition: transform 0.28s ease, opacity 0.2s ease;
+        transition:
+          transform 0.28s ease,
+          opacity 0.2s ease;
       }
 
       .vertical {

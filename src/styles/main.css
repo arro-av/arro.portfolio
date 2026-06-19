@@ -78,6 +78,9 @@ body {
     border-right: none;
   }
 }
+body .highlight {
+  font-weight: 700;
+}
 
 .projectNav {
   border-top: 2px solid #383838;
@@ -256,7 +259,7 @@ body {
 }
 .projectListContainer .projectContainer p {
   font-size: 14px;
-  opacity: 60%;
+  opacity: 70%;
   color: var(--text-color);
   padding-left: 5px;
   margin-left: 8px;
@@ -299,7 +302,7 @@ body {
   font-family: "space mono", monospace;
   font-size: 11px;
   color: var(--text-color);
-  opacity: 50%;
+  opacity: 60%;
   width: -moz-fit-content;
   width: fit-content;
   border: 1px solid var(--text-color);
@@ -906,6 +909,7 @@ nav ul .light:hover {
 #nyan {
   cursor: pointer;
   margin-left: 10px;
+  transform: translateY(4px);
   width: 30px;
   opacity: 0%;
 }
@@ -997,7 +1001,7 @@ nav ul .light:hover {
   font-weight: 500;
   line-height: 30px;
   padding-bottom: 0px;
-  opacity: 60%;
+  opacity: 80%;
   text-align: left;
 }
 @media (max-width: 778px) {
@@ -1268,7 +1272,7 @@ pre {
 
 .aboutDetails,
 .projectDetails {
-  width: 80%;
+  width: 82%;
   margin: 0 auto;
 }
 @media (max-width: 600px) {

@@ -6,8 +6,7 @@ import LinkTree from "./views/LinkTree.vue";
 //DEVELOPMENT PROJECTS
 import progress from "./views/Projects/progress.vue";
 import arro from "./views/Projects/arro.vue";
-import FlotteLotte from "./views/Projects/FlotteLotte.vue";
-import dinoRunner from "./views/Projects/dino_runner.vue";
+import hagenberg from "./views/Projects/hagenberg.vue";
 
 //DESIGN PROJECTS
 import eioeiclub from "./views/Projects/808club.vue";
@@ -50,14 +49,21 @@ const routes = [
     component: progress,
   },
   {
+    path: "/hagenberg",
+    name: "hagenberg",
+    component: hagenberg,
+  },
+  {
+    path: "/FlotteLotte",
+    redirect: { path: "/hagenberg", hash: "#LottieHack" },
+  },
+  {
     path: "/FLotteLotte",
-    name: "FlotteLotte",
-    component: FlotteLotte,
+    redirect: { path: "/hagenberg", hash: "#LottieHack" },
   },
   {
     path: "/dino_runner",
-    name: "dino_runner",
-    component: dinoRunner,
+    redirect: { path: "/hagenberg", hash: "#DinoRunner" },
   },
   //DESIGN
   {
@@ -104,6 +110,14 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
+    }
+
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 24,
+        behavior: "smooth",
+      };
     }
 
     if (to.path === "/" && projectRoutes.includes(from.path)) {

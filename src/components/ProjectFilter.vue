@@ -8,7 +8,6 @@ import {
   nextTick,
 } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
-import dinoRunnerThumbnail from "../assets/dino_runner/vectors/Dino.svg?url";
 
 const filters = ["ALL PROJECTS", "AUDIO VISUAL", "DEVELOPMENT", "DESIGN"];
 
@@ -122,31 +121,13 @@ const projects = ref([
     tag: ["GRAPHIC DESIGN", "AFFINITY"],
   },
   //___10___
-  /* TO BE ADDED LATER - HAVE NOT GATHERED PROJECTS YET
   {
     categories: ["DEVELOPMENT", "DESIGN"],
     title: "SIDEPROJECTS HAGENBERG",
-    text: "An archive containing a whole bunch of different mini projects I do during uni.",
+    text: "An archive containing mini projects I do during uni.",
     currentProjectView: "/hagenberg",
     imagePath: "/card_thumbails/Hagenberg.jpg",
-    tag: ["SCHOOL PROJECTS", "ASSIGNMENTS"],
-  },
-  */
-  {
-    categories: ["DEVELOPMENT"],
-    title: "DINO RUNNER",
-    text: "A small playable runner built with one HTML file and Lottie animations.",
-    currentProjectView: "/dino_runner",
-    imagePath: "/card_thumbails/Dino_Runner.jpg",
-    tag: ["GAME", "LOTTIE", "ANIMATION"],
-  },
-  {
-    categories: ["DEVELOPMENT"],
-    title: "LOTTIEHACK",
-    text: "A browser tool for cleaning Lottie JSON exports from unwanted elements. ;)",
-    currentProjectView: "/FlotteLotte",
-    imagePath: "/card_thumbails/Lottie_Hack.jpg",
-    tag: ["TOOL", "LOTTIE"],
+    tag: ["FH HAGENBERG", "MINI PROJECTS"],
   },
 ]);
 
